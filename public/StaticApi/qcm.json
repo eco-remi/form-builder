@@ -70,6 +70,17 @@
       "answer": "Cela augmente l'efficacité et renforce les relations"
     },
     {
+      "uuid": "7h7u8y9i",
+      "question": "Que fait le manager Directif (M1) ?",
+      "options": [
+        "Oriente, dirige, donne des instructions",
+        "Détaille le planning et argumente sur sa validité",
+        "Veille à ce que chacun ait bien compris ce qui est attendu",
+        "Accepte les suggestions et propositions"
+      ],
+      "answer": "Oriente, dirige, donne des instructions"
+    },
+    {
       "uuid": "7g8h9i0j",
       "question": "Que signifie l'acronyme KPI dans le management ?",
       "options": [
@@ -110,6 +121,17 @@
         "Une communication ouverte",
         "Une autonomie limitée",
         "Un suivi constant par le manager"
+      ],
+      "answer": "Une communication ouverte"
+    },
+    {
+      "uuid": "1z4h2l3m",
+      "question": "Quelles sont les 5 étapes de développement d'un équipe du Modèle de Tuckman",
+      "options": [
+        "Starting, Storming, Placing, Normalizing, Comming",
+        "Forcing, Starring, Norming, Packaging, During",
+        "Initiating, Serializing, Atracting, Performing, During",
+        "Forming, Storming, Norming, Performing, Adjourning"
       ],
       "answer": "Une communication ouverte"
     },
