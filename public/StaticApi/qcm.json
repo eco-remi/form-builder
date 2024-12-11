@@ -1,247 +1,392 @@
 {
   "$schema": "form.schema.json",
-  "uuid": "eval0001-2c6e-4f1e-9c24-08c6900990d2",
-  "title": "Évaluation des connaissances à propos des Nouveaux Paradigmes de Base de Données",
+  "uuid": "eval-management",
+  "title": "Évaluation des connaissances à propos de l'initiation au management",
   "items": [
     {
-      "uuid": "6c476dbc-2f90-4d49-87c8-bc3d2c062e45",
-      "question": "Quel est l'un des principaux avantages des bases de données NoSQL par rapport aux bases de données relationnelles ?",
-      "options": ["Scalabilité horizontale", "ACIDité stricte", "Requêtes complexes", "Schéma fixe"],
-      "answer": "Scalabilité horizontale"
+      "uuid": "1a2b3c4d",
+      "question": "Quel est le rôle principal d'un manager d'équipe projet ?",
+      "options": [
+        "Exécuter toutes les tâches techniques",
+        "Inspirer et guider l'équipe vers un objectif commun",
+        "Assurer uniquement la gestion administrative",
+        "Prendre toutes les décisions techniques à la place de l'équipe"
+      ],
+      "answer": "Inspirer et guider l'équipe vers un objectif commun"
     },
     {
-      "uuid": "6d862948-921d-44da-a26f-6f4ff0aa0c05",
-      "question": "Quel type de base de données NoSQL est le plus adapté pour stocker des relations complexes entre entités ?",
-      "options": ["Base Clé-Valeur", "Base Documentaire", "Base en Colonne", "Base Graphe"],
-      "answer": "Base Graphe"
+      "uuid": "2b3c4d5e",
+      "question": "Quels sont les trois piliers d'une équipe performante ?",
+      "options": [
+        "Communication, collaboration et objectifs clairs",
+        "Compétition, autonomie, gestion",
+        "Techniques, outils, procédures",
+        "Conformité, innovation, créativité"
+      ],
+      "answer": "Communication, collaboration et objectifs clairs"
     },
     {
-      "uuid": "99689cc3-78f2-4baf-bd64-6b21c7055365",
-      "question": "Quel est le principal compromis dans le théorème CAP (Consistency, Availability, Partition tolerance) des bases de données distribuées ?",
-      "options": ["Performance", "Coût", "Sécurité", "Consistance ou Disponibilité"],
-      "answer": "Consistance ou Disponibilité"
+      "uuid": "3c4d5e6f",
+      "question": "Quelle méthodologie est souvent utilisée pour gérer les projets informatiques ?",
+      "options": [
+        "Scrum",
+        "Six Sigma",
+        "PERT",
+        "Lean Manufacturing"
+      ],
+      "answer": "Scrum"
     },
     {
-      "uuid": "5380df7f-fa26-4ce8-bb0f-fe213987b49f",
-      "question": "Qu’est-ce qui caractérise MongoDB ?",
-      "options": ["C’est un modèle orienté graphique", "C’est un modèle orienté document", "C’est un modèle structuré en clés-valeurs", "C’est un modèle orienté json-objet"],
-      "answer": "C’est un modèle orienté document"
+      "uuid": "4d5e6f7g",
+      "question": "Qu'est-ce qu'un objectif SMART ?",
+      "options": [
+        "Simple, Mesurable, Atteignable, Réaliste, Temporel",
+        "Stratégiquement Mesuré avec des Actions Résolues et Testées",
+        "Souhaité, Mesurable, Adaptable, Requis, Testé",
+        "Stable, Mobile, Ambitieux, Rationnel, Temporel"
+      ],
+      "answer": "Simple, Mesurable, Atteignable, Réaliste, Temporel"
     },
     {
-      "uuid": "f2920d81-77f0-4b9e-b8cb-8e1968f51989",
-      "question": "Que nous renvoie cette requête sur la collection notes de la base etudiants ?\n\n`db.notes.find({}, {\"nom\": true, \"_id\": false})`",
-      "options": ["Affiche tout le contenu de la collection notes", "Les noms des étudiants de la base et la clé _id qui identifie chaque étudiant", "Tous les noms des étudiants de la base, mais pas les autres clés", "Toutes les entrées qui ont un nom mais n'ont pas d'identifiant"],
-      "answer": "Tous les noms des étudiants de la base, mais pas les autres clés"
+      "uuid": "5e6f7g8h",
+      "question": "Dans Scrum, quel rôle est chargé de protéger l'équipe des interruptions extérieures ?",
+      "options": [
+        "Product Owner",
+        "Scrum Master",
+        "Développeur",
+        "Manager de projet"
+      ],
+      "answer": "Scrum Master"
     },
     {
-      "uuid": "6c7f9e52-1c56-482c-b4e3-48ba77b29b75",
-      "question": "Quel opérateur permet de ne renvoyer que les documents qui ne vérifient aucune condition de la liste ?",
-      "options": ["L’opérateur $eq", "L’opérateur $nor", "L’opérateur $gt", "L’opérateur $nin"],
-      "answer": "L’opérateur $nor"
+      "uuid": "6f7g8h9i",
+      "question": "Pourquoi est-il important d'encourager la collaboration dans une équipe ?",
+      "options": [
+        "Cela réduit le temps passé sur la communication",
+        "Cela augmente l'efficacité et renforce les relations",
+        "Cela supprime les conflits internes",
+        "Cela permet au manager d'avoir moins de responsabilités"
+      ],
+      "answer": "Cela augmente l'efficacité et renforce les relations"
     },
     {
-      "uuid": "14786bdb-2021-4fe2-bb13-7832c90e318a",
-      "question": "Dans un contexte d'éco-conception, quelle caractéristique est la plus critique lors du choix d'une base de données ?",
-      "options": ["Coût", "Flexibilité", "Consommation d'énergie", "Facilité d'utilisation"],
-      "answer": "Consommation d'énergie"
+      "uuid": "7g8h9i0j",
+      "question": "Que signifie l'acronyme KPI dans le management ?",
+      "options": [
+        "Key Process Indicator",
+        "Knowledge Performance Indicator",
+        "Key Performance Indicator",
+        "Knowledge Project Implementation"
+      ],
+      "answer": "Key Performance Indicator"
     },
     {
-      "uuid": "afd96d2d-9e99-40b1-b0b2-8034bd574086",
-      "question": "Quel type de base de données est le mieux adapté pour des systèmes de cache hautement performants ?",
-      "options": ["Base Documentaire", "Base en Colonne", "Base Graphe", "Base Clé-Valeur"],
-      "answer": "Base Clé-Valeur"
+      "uuid": "8h9i0j1k",
+      "question": "Quelle est une qualité essentielle d'un bon manager ?",
+      "options": [
+        "Capacité à micromanager",
+        "Intelligence émotionnelle",
+        "Autorité stricte",
+        "Expertise technique"
+      ],
+      "answer": "Intelligence émotionnelle"
     },
     {
-      "uuid": "2088c965-2f54-4351-a241-0f4bc345dcbd",
-      "question": "Que signifie la Scalabilité horizontale ?",
-      "options": ["Augmenter ou réduire la mémoire vive", "Augmenter ou réduire les volumes de stockage", "Augmenter ou réduire la puissance du processeur", "Augmenter ou réduire le nombre de machine"],
-      "answer": "Augmenter ou réduire le nombre de machine"
+      "uuid": "9i0j1k2l",
+      "question": "Quel outil est souvent utilisé pour organiser les tâches dans un projet Scrum ?",
+      "options": [
+        "Diagramme de Gantt",
+        "Tableau Kanban",
+        "WBS (Work Breakdown Structure)",
+        "Diagramme PERT"
+      ],
+      "answer": "Tableau Kanban"
     },
     {
-      "uuid": "1d70561f-c6a4-4411-9bd3-72090ebdbba6",
-      "question": "Parmi ces bases de données, laquelle est une base de données documentaire ?",
-      "options": ["Redis", "MongoDB", "Cassandra", "Neo4j"],
-      "answer": "MongoDB"
+      "uuid": "0j1k2l3m",
+      "question": "Dans une équipe performante, quelle est une caractéristique essentielle ?",
+      "options": [
+        "Une hiérarchie rigide",
+        "Une communication ouverte",
+        "Une autonomie limitée",
+        "Un suivi constant par le manager"
+      ],
+      "answer": "Une communication ouverte"
     },
     {
-      "uuid": "079988ca-a671-445c-a7bc-3322490145d3",
-      "question": "Quel type de base de données NoSQL est le mieux adapté pour le stockage de logs et de données temporelles ?",
-      "options": ["Base en Colonne", "Base Graphe", "Base Clé-Valeur", "Base Documentaire"],
-      "answer": "Base en Colonne"
+      "uuid": "1k2l3m4n",
+      "question": "Quel est l’objectif principal de la gestion du changement dans un projet informatique ?",
+      "options": [
+        "Minimiser les coûts du projet",
+        "S'assurer que l'équipe accepte et s'adapte aux évolutions",
+        "Réduire les délais du projet",
+        "Contrôler strictement les actions de l'équipe"
+      ],
+      "answer": "S'assurer que l'équipe accepte et s'adapte aux évolutions"
     },
     {
-      "uuid": "1c1a763a-86ea-4976-b8c8-253dcbf2160d",
-      "question": "Quelle technologie est souvent utilisée pour réduire la consommation d'énergie des bases de données dans le cadre de l'éco-conception ?",
-      "options": ["Virtualisation", "Compression des données", "Bases de données en mémoire", "Réplication des données"],
-      "answer": "Compression des données"
+      "uuid": "2l3m4n5o",
+      "question": "Que doit faire un manager face à un conflit dans son équipe ?",
+      "options": [
+        "Laisser les membres régler leurs différends seuls",
+        "Identifier la cause et chercher une solution équitable",
+        "Imposer une décision sans consulter l'équipe",
+        "Réorganiser l'équipe immédiatement"
+      ],
+      "answer": "Identifier la cause et chercher une solution équitable"
     },
     {
-      "uuid": "63d0739f-18fc-4a1c-ad1e-3704f1524390",
-      "question": "Comment désigne t'on un système d'information ou un réseau pour lequel l'ensemble des ressources disponibles ne se trouvent pas au même endroit ou sur la même machine ?",
-      "options": ["Une architecture Éclatée", "Une architecture Distribuée", "Une architecture en Base Graphe", "Une architecture Hexagonale"],
-      "answer": "Une architecture Distribuée"
+      "uuid": "3m4n5o6p",
+      "question": "Quel est un inconvénient possible de la méthode Scrum ?",
+      "options": [
+        "Trop de rigidité dans les étapes",
+        "Dépendance à une forte collaboration",
+        "Difficulté à s'adapter aux changements",
+        "Problèmes avec la gestion des délais"
+      ],
+      "answer": "Dépendance à une forte collaboration"
     },
     {
-      "uuid": "4cfd2e36-05a0-4a55-a3a9-5ad594e1102b",
-      "question": "Dans quel contexte les bases de données graphe sont-elles les plus efficaces ?",
-      "options": ["Analyse des réseaux sociaux", "Gestion des stocks", "Calculs financiers", "Stockage de fichiers"],
-      "answer": "Analyse des réseaux sociaux"
+      "uuid": "4n5o6p7q",
+      "question": "Quel est un indicateur de performance d'une équipe ?",
+      "options": [
+        "Nombre de réunions réalisées",
+        "Qualité des livrables",
+        "Respect strict du plan initial",
+        "Diminution des coûts"
+      ],
+      "answer": "Qualité des livrables"
     },
     {
-      "uuid": "ec340507-f217-46ac-b8c3-80a37581755e",
-      "question": "Quelle caractéristique distingue principalement les bases de données NoSQL des bases de données relationnelles ?",
-      "options": ["Usage de SQL", "Schéma flexible", "Transactions ACID", "Tables et relations"],
-      "answer": "Schéma flexible"
+      "uuid": "5o6p7q8r",
+      "question": "Pourquoi est-il important d'établir des rôles clairs dans une équipe ?",
+      "options": [
+        "Pour permettre au manager de déléguer toutes ses tâches",
+        "Pour éviter les redondances et améliorer la productivité",
+        "Pour s'assurer que tous les membres font le même travail",
+        "Pour centraliser les responsabilités sur une seule personne"
+      ],
+      "answer": "Pour éviter les redondances et améliorer la productivité"
     },
     {
-      "uuid": "9922ed4f-8a02-478b-bab7-0bc36026c3b9",
-      "question": "Quel est le principal avantage des bases de données en colonne comme Cassandra dans les systèmes distribués ?",
-      "options": ["Support des requêtes complexes", "Réplication automatique", "Scalabilité horizontale", "Gestion de transactions ACID"],
-      "answer": "Scalabilité horizontale"
+      "uuid": "6p7q8r9s",
+      "question": "Dans Scrum, qu'est-ce qu'un sprint ?",
+      "options": [
+        "Une réunion pour planifier le projet",
+        "Une période de temps fixe pour accomplir un ensemble de tâches",
+        "Un objectif principal du projet",
+        "Une phase de test des livrables"
+      ],
+      "answer": "Une période de temps fixe pour accomplir un ensemble de tâches"
     },
     {
-      "uuid": "50983161-a1f0-480a-84e8-072afea0a34e",
-      "question": "Quel rôle joue un Responsable Green IT dans le choix des bases de données ?",
-      "options": ["Optimiser la performance des requêtes", "Assurer la sécurité des données", "Réduire l'empreinte carbone", "Maximiser la disponibilité"],
-      "answer": "Réduire l'empreinte carbone"
+      "uuid": "7q8r9s0t",
+      "question": "Comment un manager peut-il maintenir la motivation dans une équipe ?",
+      "options": [
+        "En fixant des délais courts et stricts",
+        "En encourageant et en reconnaissant les efforts de chacun",
+        "En centralisant les décisions",
+        "En réduisant les interactions entre les membres"
+      ],
+      "answer": "En encourageant et en reconnaissant les efforts de chacun"
     },
     {
-      "uuid": "18463176-a83a-4fab-880a-9d404e61828d",
-      "question": "Quelle base de données choisir pour avoir une haute disponibilité sur des agrégations de données pré-calculés",
-      "options": ["VoltDB", "MongoDB", "Redis", "Neo4j"],
-      "answer": "Redis"
+      "uuid": "8r9s0t1u",
+      "question": "Quel est un principe clé de la méthode Agile ?",
+      "options": [
+        "Documentation exhaustive avant de commencer",
+        "Livraison rapide et continue de valeur",
+        "Suivi strict du plan initial",
+        "Autonomie totale sans interaction"
+      ],
+      "answer": "Livraison rapide et continue de valeur"
     },
     {
-      "uuid": "fee83f81-17a3-4d1f-94ed-21658d4022ad",
-      "question": "Pourquoi les bases de données en mémoire sont-elles souvent préférées dans des contextes d'éco-conception ?",
-      "options": ["Parce qu'elles sont moins coûteuses", "Parce qu'elles consomment moins d'énergie", "Parce qu'elles sont plus sécurisées", "Parce qu'elles sont plus faciles à administrer"],
-      "answer": "Parce qu'elles consomment moins d'énergie"
+      "uuid": "9s0t1u2v",
+      "question": "Que signifie 'itération' dans le contexte Agile ?",
+      "options": [
+        "Une révision de la planification du projet",
+        "Une période définie pour livrer des améliorations",
+        "Une mise en pause du projet",
+        "Une discussion avec les parties prenantes"
+      ],
+      "answer": "Une période définie pour livrer des améliorations"
     },
     {
-      "uuid": "08ec273b-2a04-4c03-8d19-0017d55eb8ec",
-      "question": "Quel type de base de données convient le mieux pour une application nécessitant des requêtes complexes sur de grandes quantités de données ?",
-      "options": ["Base Graphe", "Base Clé-Valeur", "Base en Colonne", "Base Documentaire"],
-      "answer": "Base en Colonne"
+      "uuid": "1u2v3w4x",
+      "question": "Quel est l'objectif principal d'une rétrospective dans Scrum ?",
+      "options": [
+        "Évaluer les performances individuelles",
+        "Améliorer les processus d'équipe pour le prochain sprint",
+        "Fixer les objectifs financiers",
+        "Établir un nouveau backlog"
+      ],
+      "answer": "Améliorer les processus d'équipe pour le prochain sprint"
     },
     {
-      "uuid": "34c7eb06-4c4a-4ab8-86c1-7e349f922465",
-      "question": "Quel est le principal défi des bases de données NoSQL lorsqu'il s'agit de garantir la consistance des données ?",
-      "options": ["Gestion des permissions", "Requêtes complexes", "Absence de transactions ACID", "La conception des modèles"],
-      "answer": "Absence de transactions ACID"
+      "uuid": "3w4x5y6z",
+      "question": "Quelle est une erreur fréquente en management d'équipe ?",
+      "options": [
+        "Favoriser l'autonomie des membres",
+        "Micromanager toutes les tâches",
+        "Encourager le feedback régulier",
+        "Utiliser des outils de collaboration"
+      ],
+      "answer": "Micromanager toutes les tâches"
     },
     {
-      "uuid": "28ac4852-3a73-469b-b8f2-5ec70e42eb42",
-      "question": "Quel est le principal avantage des bases de données Graphe comme Neo4j pour les systèmes interconnectés ?",
-      "options": ["Faible latence", "Simplicité d'utilisation", "Modélisation efficace des relations", "Coût réduit"],
-      "answer": "Modélisation efficace des relations"
+      "uuid": "4x5y6z7a",
+      "question": "Quel élément favorise la confiance dans une équipe ?",
+      "options": [
+        "Le contrôle permanent par le manager",
+        "La transparence et la communication ouverte",
+        "L'isolement des membres pour éviter les conflits",
+        "La mise en compétition des collaborateurs"
+      ],
+      "answer": "La transparence et la communication ouverte"
     },
     {
-      "uuid": "ce309c72-45f7-40e7-8503-cb52310d0f8e",
-      "question": "Qu'est ce qui caractérise une architecture Hexagonale ?",
-      "options": ["Un coeur métier entouré de services interchangeables", "Un réseau de micro-service pour chacune des facettes métiers", "Un monolithe centralisant les fonctionnalités et services métiers", "Un système éclaté de bases déployées en cluster répliqué"],
-      "answer": "Un coeur métier entouré de services interchangeables"
+      "uuid": "5y6z7a8b",
+      "question": "Dans la méthode Scrum, que représente le backlog ?",
+      "options": [
+        "Les membres de l'équipe",
+        "Les objectifs finaux du projet",
+        "Une liste de tâches priorisées",
+        "Les obstacles identifiés dans le sprint"
+      ],
+      "answer": "Une liste de tâches priorisées"
     },
     {
-      "uuid": "0a73de77-5e8c-4877-ada7-c7739d1fe946",
-      "question": "Quel paradigme de base de données privilégie une approche sans schéma prédéfini ?",
-      "options": ["SQL", "NoSQL", "NewSQL", "ACID"],
-      "answer": "NoSQL"
+      "uuid": "6z7a8b9c",
+      "question": "Comment un manager peut-il gérer la résistance au changement ?",
+      "options": [
+        "En ignorant les réticences des membres",
+        "En imposant le changement sans consultation",
+        "En déléguant complètement à l'équipe",
+        "En expliquant les bénéfices et en impliquant l'équipe dans le processus"
+      ],
+      "answer": "En expliquant les bénéfices et en impliquant l'équipe dans le processus"
     },
     {
-      "uuid": "d711d30c-87de-4acf-84d7-a49c33012d99",
-      "question": "Quelle base de données est la plus adaptée pour des applications nécessitant une haute disponibilité et une faible latence ?",
-      "options": ["Google Spanner", "MongoDB", "Cassandra", "Neo4j"],
-      "answer": "Cassandra"
+      "uuid": "7a8b9c0d",
+      "question": "Quelle est une conséquence négative d'un mauvais management ?",
+      "options": [
+        "Amélioration de la productivité",
+        "Renforcement de la cohésion d'équipe",
+        "Diminution de la motivation et augmentation du turnover",
+        "Livraison plus rapide des projets"
+      ],
+      "answer": "Diminution de la motivation et augmentation du turnover"
     },
     {
-      "uuid": "6f59d620-70a6-4f8d-bdb3-183383f97b71",
-      "question": "Quel est l'inconvénient majeur des bases de données NoSQL pour les applications critiques en termes de données ?",
-      "options": ["Manque de flexibilité", "Les ressources necessaires", "Absence de consistance forte", "Coût élevé"],
-      "answer": "Absence de consistance forte"
+      "uuid": "8b9c0d1e",
+      "question": "Quelle compétence est particulièrement utile pour résoudre des conflits ?",
+      "options": [
+        "Compétence technique",
+        "Autorité stricte",
+        "Ignorance des désaccords",
+        "Capacité d'écoute active"
+      ],
+      "answer": "Capacité d'écoute active"
     },
     {
-      "uuid": "260a92dc-33ea-4354-a24e-1ea614445625",
-      "question": "Quel type de base de données NoSQL est particulièrement adapté à la gestion de gros volumes de données structurées en colonnes ?",
-      "options": ["Base Clé-Valeur", "Base Documentaire", "Base en Colonne", "Base Graphe"],
-      "answer": "Base en Colonne"
+      "uuid": "9c0d1e2f",
+      "question": "Quelle est la première étape pour établir des objectifs d'équipe ?",
+      "options": [
+        "Analyser les forces et faiblesses des membres",
+        "Répartir les tâches immédiatement",
+        "Organiser des réunions quotidiennes",
+        "Fixer des délais courts"
+      ],
+      "answer": "Analyser les forces et faiblesses des membres"
     },
     {
-      "uuid": "f3591f80-ca00-441c-a49d-8f5829bf48cf",
-      "question": "Quelle fonctionnalité de MongoDB améliore significativement la disponibilité des données?",
-      "options": ["La réplication", "Le Sharding", "Les transactions atomiques", "Le WiredTiger Storage Engine"],
-      "answer": "La réplication"
+      "uuid": "0d1e2f3g",
+      "question": "Qu'est-ce qui définit une équipe agile ?",
+      "options": [
+        "Hiérarchie stricte et contrôle rigoureux",
+        "Focus sur les procédures uniquement",
+        "Flexibilité, collaboration, et amélioration continue",
+        "Respect strict du plan initial"
+      ],
+      "answer": "Flexibilité, collaboration, et amélioration continue"
     },
     {
-      "uuid": "c37662ac-7bbf-4d3d-ba60-d61388bb60ca",
-      "question": "Quel est le principal avantage des bases de données SQL classique pour les systèmes transactionnels complexes ?",
-      "options": ["Réduction des coûts", "Flexibilité accrue", "Transactions ACID", "Scalabilité verticale"],
-      "answer": "Transactions ACID"
+      "uuid": "1e2f3g4h",
+      "question": "Pourquoi le feedback est-il crucial dans une équipe ?",
+      "options": [
+        "Il permet d'imposer les décisions du manager",
+        "Il réduit le besoin de réunions",
+        "Il évite les désaccords",
+        "Il améliore la communication et favorise l'amélioration continue"
+      ],
+      "answer": "Il améliore la communication et favorise l'amélioration continue"
     },
     {
-      "uuid": "3bd97ff3-32df-4727-9420-b9fac48a9be1",
-      "question": "Quel rôle joue un Product Owner / Scrum Master dans un projet utilisant une base de données NewSQL ?",
-      "options": ["Optimiser les requêtes", "Assurer la cohérence des données", "Prioriser les fonctionnalités", "Réduire les coûts"],
-      "answer": "Prioriser les fonctionnalités"
+      "uuid": "2f3g4h5i",
+      "question": "Comment mesurer la performance d'une équipe projet ?",
+      "options": [
+        "Par le nombre de tâches assignées",
+        "Par la qualité et le respect des délais des livrables",
+        "Par le nombre de réunions effectuées",
+        "Par le budget dépensé"
+      ],
+      "answer": "Par la qualité et le respect des délais des livrables"
     },
     {
-      "uuid": "d5883654-e103-4ffc-981a-ef18cdffe147",
-      "question": "Quel est le principal avantage des bases de données en mémoire comme Redis pour des applications temps réel ?",
-      "options": ["Réduction des coûts", "Scalabilité horizontale", "Faible latence", "Simplicité d'administration"],
-      "answer": "Faible latence"
+      "uuid": "3g4h5i6j",
+      "question": "Quelle est la principale fonction du Product Owner dans Scrum ?",
+      "options": [
+        "Diriger les développements techniques",
+        "Gérer le planning quotidien",
+        "Superviser la qualité des livrables",
+        "Définir et prioriser les besoins métiers"
+      ],
+      "answer": "Définir et prioriser les besoins métiers"
     },
     {
-      "uuid": "7c884385-33c6-477e-b4fc-3601e617f07f",
-      "question": "Quelle architecture logiciel permet une flexibilité accrue pour l'évolution d'un système ?",
-      "options": ["Architecture hexagonale", "Architecture triangulaire", "Architecture composé", "Architecture distribuée"],
-      "answer": "Architecture hexagonale"
+      "uuid": "4h5i6j7k",
+      "question": "Quelle technique aide à favoriser l'autonomie dans une équipe ?",
+      "options": [
+        "Micromanagement",
+        "Réduction de la communication",
+        "Délégation avec objectifs clairs",
+        "Surveillance continue"
+      ],
+      "answer": "Délégation avec objectifs clairs"
     },
     {
-      "uuid": "7c884385-33c6-477e-b4fc-3601e617f02f",
-      "question": "Qu'est ce que qui carractérise une achitecture distribuée ?",
-      "options": ["Chacun à le même nombre de carte", "Plusieurs bases de données interconnectées", "Plusieurs bases de données intallées sur le serveur principal", "L'application est fragmenté en micro-services"],
-      "answer": "Plusieurs bases de données interconnectées"
+      "uuid": "5i6j7k8l",
+      "question": "Que mesure l'auto-efficacité dans une équipe ?",
+      "options": [
+        "La confiance des membres en leurs capacités à réussir",
+        "Le budget nécessaire pour un projet",
+        "Le niveau hiérarchique de chaque membre",
+        "La complexité des tâches assignées"
+      ],
+      "answer": "La confiance des membres en leurs capacités à réussir"
     },
     {
-      "uuid": "cd3d74cf-f3da-4a32-92e0-c3e573b5bc49",
-      "question": "Quel paradigme de base de données privilégie la scalabilité horizontale au détriment de la consistance stricte ?",
-      "options": ["SQL", "NoSQL", "NewSQL", "ACID"],
-      "answer": "NoSQL"
+      "uuid": "6p6kl78x",
+      "question": "Avec quelle Matrice peut-on utiliser pour répartir les rôles dans une entreprise ?",
+      "options": [
+        "RACHI",
+        "RASSI",
+        "RACI",
+        "RATSY"
+      ],
+      "answer": "RACI"
     },
     {
-      "uuid": "f54fcea9-47af-47d9-90a0-6ef88ed73b6d",
-      "question": "Quel est le principal avantage des bases de données documentaires comme MongoDB pour des applications web ?",
-      "options": ["Gestion des relations imbriquées", "La rapidité d'execution", "Flexibilité du schéma", "Scalabilité verticale"],
-      "answer": "Flexibilité du schéma"
-    },
-    {
-      "uuid": "c6f8af3c-4ff1-4a57-9fea-9ecf0c6100c8",
-      "question": "Quel type de base de données est le plus approprié pour modéliser des réseaux sociaux ou des chaînes d'approvisionnement ?",
-      "options": ["Base Clé-Valeur", "Base en Colonne", "Base Documentaire", "Base Graphe"],
-      "answer": "Base Graphe"
-    },
-    {
-      "uuid": "120d686b-b7a9-4d56-b6fa-ec5f2119b68b",
-      "question": "Quelle technologie peut être utilisée pour améliorer l'efficacité énergétique des systèmes de bases de données distribués ?",
-      "options": ["Compression des données", "Réplication synchrone", "Requêtes optimisées", "Virtualisation"],
-      "answer": "Compression des données"
-    },
-    {
-      "uuid": "7725c3c4-48bd-4c32-8d41-636b5eb77da5",
-      "question": "Quelle caractéristique rend les bases de données en mémoire particulièrement efficaces pour des applications nécessitant des réponses instantanées ?",
-      "options": ["Faible coût", "Faible latence", "Simplicité de requêtes", "Scalabilité horizontale"],
-      "answer": "Faible latence"
-    },
-    {
-      "uuid": "c623429a-944e-4674-baed-de2be1342958",
-      "question": "Quel type de base de données est souvent préféré pour les systèmes ERP nécessitant une intégrité transactionnelle stricte ?",
-      "options": ["SQL traditionnel", "NoSQL", "NewSQL", "Base Graphe"],
-      "answer": "NewSQL"
-    },
-    {
-      "uuid": "7d032c3e-db63-46a3-8b9c-2359d17a7f6d",
-      "question": "Que signifie A.C.I.D, le principe de base de données ?",
-      "options": ["Actually, Critic, Ischemic and D-worded", "Availability, Consistency, Iterable, Database", "Atomicité, Cohérence, Isolation et Durabilité", "Autonomie, Consistance et Isolation des Données"],
-      "answer": "Atomicité, Cohérence, Isolation et Durabilité"
+      "uuid": "4r224tvfd",
+      "question": "À quoi sert un tableau Kanban ?",
+      "options": [
+        "Organiser les tâches",
+        "Repartir les rôles",
+        "Définir les objectifs",
+        "Coller des post-it colorés"
+      ],
+      "answer": "Organiser les tâches"
     }
   ]
 }
