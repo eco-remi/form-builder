@@ -24,7 +24,7 @@ class IndexController extends AbstractController
     #[Route('/form', name: 'form', methods: ['GET'])]
     public function displayForm(#[MapQueryParameter] ?string $slug, #[MapQueryParameter] ?string $name, Request $request): Response
     {
-        if (empty($name) || empty($slug)) {
+        if (empty($slug)) {
             throw new AccessDeniedHttpException();
         }
 
@@ -49,7 +49,7 @@ class IndexController extends AbstractController
     #[Route('/form', name: 'postform', methods: ['POST'])]
     public function postForm(#[MapQueryParameter] ?string $slug, #[MapQueryParameter] ?string $name, Request $request): Response
     {
-        if (empty($name) || empty($slug)) {
+        if (empty($slug)) {
             throw new AccessDeniedHttpException();
         }
 

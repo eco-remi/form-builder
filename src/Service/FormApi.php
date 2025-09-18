@@ -3,16 +3,15 @@
 namespace App\Service;
 
 use App\Dto\Form;
-use App\Dto\Item;
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
-use Symfony\Contracts\HttpClient\HttpClientInterface;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class FormApi
 {
+    public string $slug = 'qcm';
     public Form $form;
 
     public function __construct()
@@ -35,7 +34,13 @@ class FormApi
         $serializer = new Serializer($normalizers, $encoders);
 
         return $serializer->deserialize(
-            file_get_contents(__DIR__ . '/../../public/StaticApi/qcm.json'),
+            file_get_contents(
+                sprintf(
+                    '%s/../../public/StaticApi/%s.json',
+                    __DIR__,
+                    $this->slug
+                )
+            ),
             Form::class,
             'json'
         );
@@ -50,8 +55,10 @@ class FormApi
     {
         try {
 
-        file_put_contents(__DIR__ . '/../../results/'
-            . $name . '_' . date('Y-m-d_His') . '.json',
+        file_put_contents(
+            sprintf( '%s/../../results/%s_%s_%s.json'
+                , __DIR__, $this->slug, $name, date('Y-m-d_His')
+            ),
                 json_encode($answers, JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE)
             );
         } catch (\Exception $e) {
@@ -62,6 +69,10 @@ class FormApi
 
     public function saveHtmlResult(string $name, string $html): void
     {
+
+        $slugger = new AsciiSlugger();
+        $name = $slugger->slug($name)->camel()->lower()->toString();
+
         file_put_contents(__DIR__ . '/../../results/'
             . $name . '_' . md5(date('YmdHis')) . '.html',
             $html

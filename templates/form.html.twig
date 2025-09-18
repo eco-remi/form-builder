@@ -85,8 +85,13 @@
         <div class="header">
             <input type="hidden" name="slug" value="{{ slug }}"/>
             <input type="hidden" name="uuid" value="{{ form.uuid }}"/>
-            <input type="hidden" name="name" value="{{ name }}"/>
             <input type="hidden" name="timestamp" value="{{ "now"|date("Y-m-d H:i:s") }}"/>
+        </div>
+        <div class="form-block">
+            <label for="name">
+                Nom Prénom
+                <input type="text" name="name" value="{{ name }}"/>
+            </label>
         </div>
         {% for item in form.items %}
             <div class="question">
