@@ -12,11 +12,10 @@ use Symfony\Component\String\Slugger\AsciiSlugger;
 class FormApi
 {
     public string $slug = 'qcm';
-    public Form $form;
+    public ?Form $form = null;
 
     public function __construct()
     {
-        $this->form = $this->loadForm();
     }
 
     /**
@@ -27,7 +26,7 @@ class FormApi
      * @throws \Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface
      * @throws \Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface
      */
-    public function loadForm(): Form|array|null
+    public function loadForm(string $slug): Form|array|null
     {
         $encoders = [new JsonEncoder()];
         $normalizers = [new ObjectNormalizer()];
@@ -38,16 +37,42 @@ class FormApi
                 sprintf(
                     '%s/../../public/StaticApi/%s.json',
                     __DIR__,
-                    $this->slug
+                    $slug
                 )
             ),
             Form::class,
             'json'
         );
     }
-
-    public function getForm(): ?Form
+    public function saveGeneratedForm(): void
     {
+        file_put_contents(
+                sprintf(
+                    '%s/../../public/StaticApi/%s.json',
+                    __DIR__,
+                    $this->form->uuid
+                ),
+            json_encode($this->form, JSON_PRETTY_PRINT|JSON_THROW_ON_ERROR|JSON_UNESCAPED_SLASHES|JSON_UNESCAPED_UNICODE)
+        );
+    }
+
+    public function getForm(string $formUuid = null): ?Form
+    {
+        if ($formUuid) {
+            // load previous randomization
+            $this->form = $this->loadForm($formUuid);
+            $this->form->uuid = $formUuid;
+        }
+
+        if (!$this->form) {
+            $this->form = $this->loadForm($this->slug);
+
+            $this->form->items = $this->randomize();
+            $this->form->uuid = uniqid($this->form->uuid);
+
+            $this->saveGeneratedForm();
+        }
+
         return $this->form;
     }
 
@@ -77,5 +102,19 @@ class FormApi
             . $name . '_' . md5(date('YmdHis')) . '.html',
             $html
             );
+    }
+
+    /**
+     * @return array
+     */
+    public function randomize($length = 40): array
+    {
+        $items = $this->form->items;
+        shuffle($items);
+
+        foreach ($items as $key => $item) {
+            shuffle($items[$key]['options']);
+        }
+        return array_slice($items, 0, $length);
     }
 }

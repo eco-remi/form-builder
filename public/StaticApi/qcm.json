@@ -1,12 +1,12 @@
 {
   "$schema": "form.schema.json",
-  "uuid": "eval0001-2c6e-4f1e-9c24-08c6900990d2",
+  "uuid": "eval0001",
   "title": "Évaluation des connaissances à propos des Nouveaux Paradigmes de Base de Données",
   "items": [
     {
       "uuid": "6c476dbc-2f90-4d49-87c8-bc3d2c062e45",
       "question": "Quel est l'un des principaux avantages des bases de données NoSQL par rapport aux bases de données relationnelles ?",
-      "options": ["Scalabilité horizontale", "ACIDité stricte", "Requêtes complexes", "Schéma fixe"],
+      "options": ["Scalabilité horizontale", "ACIDité stricte", "Requêtes complexes", "Schéma simple"],
       "answer": "Scalabilité horizontale"
     },
     {
@@ -18,13 +18,13 @@
     {
       "uuid": "99689cc3-78f2-4baf-bd64-6b21c7055365",
       "question": "Quel est le principal compromis dans le théorème CAP (Consistency, Availability, Partition tolerance) des bases de données distribuées ?",
-      "options": ["Performance", "Coût", "Sécurité", "Consistance ou Disponibilité"],
+      "options": ["Performance ou Latence", "Coût ou Scalabilité", "Sécurité ou Accessibilité", "Consistance ou Disponibilité"],
       "answer": "Consistance ou Disponibilité"
     },
     {
       "uuid": "5380df7f-fa26-4ce8-bb0f-fe213987b49f",
       "question": "Qu’est-ce qui caractérise MongoDB ?",
-      "options": ["C’est un modèle orienté graphique", "C’est un modèle orienté document", "C’est un modèle structuré en clés-valeurs", "C’est un modèle orienté json-objet"],
+      "options": ["C’est un modèle orienté graphique", "C’est un modèle orienté document", "C’est un modèle structuré en clés-valeurs", "C’est un modèle orienté objet"],
       "answer": "C’est un modèle orienté document"
     },
     {
@@ -58,6 +58,12 @@
       "answer": "Augmenter ou réduire le nombre de machine"
     },
     {
+      "uuid": "2088c965-2f54-4351-b341-bisbc345dcbd",
+      "question": "Que signifie la Scalabilité verticale ?",
+      "options": ["Augmenter ou réduire la mémoire vive", "Augmenter ou réduire les volumes de stockage", "Augmenter ou réduire la puissance du processeur", "Augmenter ou réduire le nombre de machine"],
+      "answer": "Augmenter ou réduire la puissance du processeur"
+    },
+    {
       "uuid": "1d70561f-c6a4-4411-9bd3-72090ebdbba6",
       "question": "Parmi ces bases de données, laquelle est une base de données documentaire ?",
       "options": ["Redis", "MongoDB", "Cassandra", "Neo4j"],
@@ -71,9 +77,15 @@
     },
     {
       "uuid": "1c1a763a-86ea-4976-b8c8-253dcbf2160d",
-      "question": "Quelle technologie est souvent utilisée pour réduire la consommation d'énergie des bases de données dans le cadre de l'éco-conception ?",
-      "options": ["Virtualisation", "Compression des données", "Bases de données en mémoire", "Réplication des données"],
-      "answer": "Compression des données"
+      "question": "Quelle technologie est souvent utilisée pour optimiser la consommation d'énergie d'un serveur ?",
+      "options": ["Virtualisation", "Simplification des données", "Bases de données en mémoire", "Réplication des données"],
+      "answer": "Virtualisation"
+    },
+    {
+      "uuid": "2b2a763a-86bi-4976-b8c8-756dcbf2160d",
+      "question": "Quelle technologie est souvent utilisée pour améliorer la tolérance aux pannes ?",
+      "options": ["Virtualisation", "Réplication des données", "Bases de données en mémoire vive", "Le Free-cooling"],
+      "answer": "Réplication des données"
     },
     {
       "uuid": "63d0739f-18fc-4a1c-ad1e-3704f1524390",
@@ -84,20 +96,20 @@
     {
       "uuid": "4cfd2e36-05a0-4a55-a3a9-5ad594e1102b",
       "question": "Dans quel contexte les bases de données graphe sont-elles les plus efficaces ?",
-      "options": ["Analyse des réseaux sociaux", "Gestion des stocks", "Calculs financiers", "Stockage de fichiers"],
-      "answer": "Analyse des réseaux sociaux"
+      "options": ["Analyse de données relationnelles", "Gestion des stocks", "Calculs financiers", "Stockage de fichiers"],
+      "answer": "Analyse de données relationnelles"
     },
     {
       "uuid": "ec340507-f217-46ac-b8c3-80a37581755e",
       "question": "Quelle caractéristique distingue principalement les bases de données NoSQL des bases de données relationnelles ?",
-      "options": ["Usage de SQL", "Schéma flexible", "Transactions ACID", "Tables et relations"],
+      "options": ["Usage de SQL-like", "Schéma flexible", "Transactions ACID", "Tables et relations"],
       "answer": "Schéma flexible"
     },
     {
       "uuid": "9922ed4f-8a02-478b-bab7-0bc36026c3b9",
-      "question": "Quel est le principal avantage des bases de données en colonne comme Cassandra dans les systèmes distribués ?",
-      "options": ["Support des requêtes complexes", "Réplication automatique", "Scalabilité horizontale", "Gestion de transactions ACID"],
-      "answer": "Scalabilité horizontale"
+      "question": "Quel est la principale utilité des bases de données en colonne comme Cassandra dans les systèmes distribués ?",
+      "options": ["Support des requêtes complexes", "Réplication automatique", "Aggregation statistique", "Gestion de transactions ACID"],
+      "answer": "Aggregation statistique"
     },
     {
       "uuid": "50983161-a1f0-480a-84e8-072afea0a34e",
@@ -142,10 +154,28 @@
       "answer": "Un coeur métier entouré de services interchangeables"
     },
     {
+      "uuid": "69dd9d54-3735-42db-b2a1-7b3bb9636474",
+      "question": "Que représente les initiales R.D.F.",
+      "options": ["Acronyme d'une ancienne administration française", "Une méthode de conception de base de données", "Un modèle de graphe pour décrire une ressource", "Un modèle de conception logiciel"],
+      "answer": "Un modèle de graphe pour décrire une ressource"
+    },
+    {
       "uuid": "0a73de77-5e8c-4877-ada7-c7739d1fe946",
       "question": "Quel paradigme de base de données privilégie une approche sans schéma prédéfini ?",
       "options": ["SQL", "NoSQL", "NewSQL", "ACID"],
       "answer": "NoSQL"
+    },
+    {
+      "uuid": "ecdeeb50-0bb9-4db3-a41c-4d9b8956d0c3",
+      "question": "À partir de quand démarre l'ère des nouveaux paradigme de base de données ?",
+      "options": ["1960", "1980", "2000", "2010"],
+      "answer": "2000"
+    },
+    {
+      "uuid": "6059f273-54a6-445c-9ca4-f13ea6c8f523",
+      "question": "Un service cloud qui propose une virtualisation de serveur et de plugin de base de données est un service de type",
+      "options": ["sur site", "IaaS", "PaaS", "SaaS"],
+      "answer": "PaaS"
     },
     {
       "uuid": "d711d30c-87de-4acf-84d7-a49c33012d99",
@@ -197,7 +227,7 @@
     },
     {
       "uuid": "7c884385-33c6-477e-b4fc-3601e617f02f",
-      "question": "Qu'est ce que qui carractérise une achitecture distribuée ?",
+      "question": "Qu'est ce que qui caractérise une architecture distribuée ?",
       "options": ["Chacun à le même nombre de carte", "Plusieurs bases de données interconnectées", "Plusieurs bases de données intallées sur le serveur principal", "L'application est fragmenté en micro-services"],
       "answer": "Plusieurs bases de données interconnectées"
     },
@@ -242,6 +272,126 @@
       "question": "Que signifie A.C.I.D, le principe de base de données ?",
       "options": ["Actually, Critic, Ischemic and D-worded", "Availability, Consistency, Iterable, Database", "Atomicité, Cohérence, Isolation et Durabilité", "Autonomie, Consistance et Isolation des Données"],
       "answer": "Atomicité, Cohérence, Isolation et Durabilité"
+    },
+    {
+      "uuid": "c37aeb6b-b16a-4b62-a957-fb7b0de4e61d",
+      "question": "Quel est le format utilisé par MongoDB pour stocker les documents en interne ?",
+      "options": ["JSON", "BSON", "XML", "YAML"],
+      "answer": "BSON"
+    },
+    {
+      "uuid": "f4b34b71-8a1b-4fd6-b7e8-1ed6c4e0732a",
+      "question": "Quelle commande MongoDB permet d’insérer un seul document dans une collection ?",
+      "options": ["db.collection.insert()", "db.collection.insertOne()", "db.collection.add()", "db.collection.saveOne()"],
+      "answer": "db.collection.insertOne()"
+    },
+    {
+      "uuid": "7f93e9ce-b5c0-4a2b-90a9-b46b3e5cc879",
+      "question": "Quel type d’index est utilisé par défaut dans MongoDB sur le champ _id ?",
+      "options": ["Index composé", "Index géospatial", "Index unique", "Index textuel"],
+      "answer": "Index unique"
+    },
+    {
+      "uuid": "37d5439b-b0c3-4a4c-a316-cad4f2f5e5b9",
+      "question": "Quel opérateur MongoDB permet de rechercher des documents dont une valeur est supérieure à un certain seuil ?",
+      "options": ["$eq", "$lt", "$gte", "$regex"],
+      "answer": "$gte"
+    },
+    {
+      "uuid": "c68c67a5-51c0-4b21-bb44-9a3b252b6f3d",
+      "question": "Quelle méthode MongoDB permet d’agréger et de transformer des données selon plusieurs étapes ?",
+      "options": ["aggregate()", "mapReduce()", "groupBy()", "filter()"],
+      "answer": "aggregate()"
+    },
+    {
+      "uuid": "94eae1b8-6e1a-49f0-9f5a-2a53722ce2da",
+      "question": "Dans MongoDB, comment appelle-t-on l’équivalent d’une table dans une base relationnelle ?",
+      "options": ["Une colonne", "Une collection", "Un document", "Un dataset"],
+      "answer": "Une collection"
+    },
+    {
+      "uuid": "b1a9a09e-9a38-4f3a-85c2-939a7d2f6c72",
+      "question": "Quelle est la commande MongoDB pour afficher toutes les bases de données disponibles ?",
+      "options": ["show dbs", "db.showAll()", "db.list()", "get databases"],
+      "answer": "show dbs"
+    },
+    {
+      "uuid": "2b54e36e-bf75-4922-83d8-2fa3b72a7e8e",
+      "question": "Quel mécanisme de MongoDB permet la répartition automatique des données sur plusieurs serveurs ?",
+      "options": ["Replication", "Sharding", "Mirroring", "Partitionnement manuel"],
+      "answer": "Sharding"
+    },
+    {
+      "uuid": "4f6a11a8-b6b3-4b17-a9a4-d1f351d5e409",
+      "question": "Dans MongoDB, que contient chaque document ?",
+      "options": ["Des tuples", "Des champs et des valeurs", "Des tables et des colonnes", "Des objets binaires uniquement"],
+      "answer": "Des champs et des valeurs"
+    },
+    {
+      "uuid": "4b28ce25-1b77-4a92-9097-8cf55f5a22fd",
+      "question": "Quel type de relation est le plus naturel à modéliser dans MongoDB ?",
+      "options": ["Relation un-à-plusieurs imbriquée", "Relation plusieurs-à-plusieurs strictement normalisée", "Relation cyclique", "Relation hiérarchique complexe"],
+      "answer": "Relation un-à-plusieurs imbriquée"
+    },
+    {
+      "uuid": "d7a1e28f-8e27-4a9c-bb51-b1c6de1a63f3",
+      "question": "Une application de messagerie instantanée qui doit stocker des paires clé-valeur très rapidement utilisera de préférence :",
+      "options": ["Une base relationnelle", "Une base clé-valeur comme Redis", "Une base en colonne comme Cassandra", "Une base graphe comme Neo4j"],
+      "answer": "Une base clé-valeur comme Redis"
+    },
+    {
+      "uuid": "9f96e4f3-5640-4b73-b7a3-89c12b4fcd76",
+      "question": "Une application e-commerce qui doit gérer un grand volume de produits avec des descriptions flexibles et variables aura intérêt à utiliser :",
+      "options": ["Une base documentaire comme MongoDB", "Une base graphe", "Une base relationnelle stricte", "Une base clé-valeur"],
+      "answer": "Une base documentaire comme MongoDB"
+    },
+    {
+      "uuid": "4c61f650-5091-46cb-8f31-c6c82f8b1b1d",
+      "question": "Une plateforme de réseau social qui doit modéliser des relations complexes entre utilisateurs (amis, abonnés) privilégiera :",
+      "options": ["Une base graphe comme Neo4j", "Une base en colonne", "Une base clé-valeur", "Une base documentaire"],
+      "answer": "Une base graphe comme Neo4j"
+    },
+    {
+      "uuid": "d3d179d8-4413-4f08-baa5-c0e785a5841f",
+      "question": "Un système d’analyse de logs en temps réel sur de gros volumes de données structurées adoptera plutôt :",
+      "options": ["Une base en colonnes comme Cassandra", "Une base graphe", "Une base relationnelle", "Une base clé-valeur"],
+      "answer": "Une base en colonnes comme Cassandra"
+    },
+    {
+      "uuid": "e47f24e2-b4e0-4d3f-847f-94efb7860da7",
+      "question": "Pour une application IoT qui collecte en continu des mesures de capteurs horodatées, le meilleur choix est :",
+      "options": ["Une base de séries temporelles comme InfluxDB", "Une base graphe", "Une base documentaire", "Une base clé-valeur"],
+      "answer": "Une base de séries temporelles comme InfluxDB"
+    },
+    {
+      "uuid": "5b7ac121-8d9f-4dc3-b0f7-7c64282c1875",
+      "question": "Une architecture de base de données distribuée permet principalement de :",
+      "options": ["Répartir les données sur plusieurs serveurs pour la scalabilité", "Garantir l'ACIDité complète", "Centraliser les traitements", "Supprimer la redondance des données"],
+      "answer": "Répartir les données sur plusieurs serveurs pour la scalabilité"
+    },
+    {
+      "uuid": "bc5938df-0c3b-41d4-9c5d-03823046a3da",
+      "question": "Une architecture de base de données répliquée est surtout utile pour :",
+      "options": ["Assurer la haute disponibilité et la tolérance aux pannes", "Réduire les coûts de stockage", "Accélérer les requêtes en écriture uniquement", "Supprimer les sauvegardes automatiques"],
+      "answer": "Assurer la haute disponibilité et la tolérance aux pannes"
+    },
+    {
+      "uuid": "c936cbf5-3e79-41a2-8e5d-7dc881a1b548",
+      "question": "Une base de données serverless hébergée sur le cloud (comme Firebase Firestore) se distingue par :",
+      "options": ["Une gestion automatique de la scalabilité sans serveur dédié", "Une obligation de configurer les serveurs manuellement", "Un stockage sur disque local uniquement", "Une absence totale de sécurité"],
+      "answer": "Une gestion automatique de la scalabilité sans serveur dédié"
+    },
+    {
+      "uuid": "ef0a6db2-0fd5-43c1-ae7a-c70bb270b86b",
+      "question": "Pour un moteur de recherche plein texte avec suggestion en temps réel, on choisira plutôt :",
+      "options": ["Une base orientée recherche comme Algolia ou Elasticsearch", "Une base relationnelle", "Une base clé-valeur", "Une base de séries temporelles"],
+      "answer": "Une base orientée recherche comme Algolia ou Elasticsearch"
+    },
+    {
+      "uuid": "9e5c41b9-f38d-4f08-8d10-d56c20b7e15c",
+      "question": "Une base centralisée est adaptée lorsque :",
+      "options": ["Le volume de données est faible et les utilisateurs sont localisés", "Les données doivent être disponibles mondialement", "La scalabilité horizontale est prioritaire", "Les pannes réseau sont fréquentes"],
+      "answer": "Le volume de données est faible et les utilisateurs sont localisés"
     }
   ]
 }

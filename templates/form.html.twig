@@ -81,7 +81,7 @@
     <h3>Nom: {{ name }}</h3>
     {% if answers.score is defined %}<h5>Score: {{ answers.score }} / {{ form.items|length }} </h5>{% endif %}
     {% if posted == false %}
-    <form method="post" action="/form?slug={{ slug }}&name={{ name }}" onsubmit="return confirm('Confirmation requise')">{% endif %}
+    <form method="post" action="/form?slug={{ slug }}" onsubmit="return confirm('Confirmation requise')">{% endif %}
         <div class="header">
             <input type="hidden" name="slug" value="{{ slug }}"/>
             <input type="hidden" name="uuid" value="{{ form.uuid }}"/>

@@ -28,8 +28,13 @@ class IndexController extends AbstractController
             throw new AccessDeniedHttpException();
         }
 
+        // keep generated form in memory
+        $session = $request->getSession();
+
         // load static form
-        $form = $this->formApi->getForm();
+        $form = $this->formApi->getForm($session->get('currentUuid') ?? null);
+
+        $session->set('currentUuid', $form->uuid);
 
         // TODO if $this->formApi->getFormUuid() !== $slug
         // throw error
@@ -54,7 +59,7 @@ class IndexController extends AbstractController
         }
 
         // load static form
-        $form = $this->formApi->getForm();
+        $form = $this->formApi->getForm($request->getPayload()->all()['uuid'] ?? null);
 
         // TODO if $this->formApi->getFormUuid() !== $slug
         // throw error
@@ -182,6 +187,7 @@ class IndexController extends AbstractController
     {
         // display result source
         $answers['score'] = 0;
+        $answers['total'] = count($answers);
         foreach ($form->items as $i => $item) {
             $form->items[$i]['result'] = '';
             if (isset($answers[$item['uuid']])
