@@ -78,7 +78,6 @@
 <body>
 <div class="form-content">
     <h1>{{ form.title }}</h1>
-    <h3>Nom: {{ name }}</h3>
     {% if answers.score is defined %}<h5>Score: {{ answers.score }} / {{ form.items|length }} </h5>{% endif %}
     {% if posted == false %}
     <form method="post" action="/form?slug={{ slug }}" onsubmit="return confirm('Confirmation requise')">{% endif %}
