@@ -409,6 +409,138 @@
         "Coller des post-it colorés"
       ],
       "answer": "Organiser les tâches"
+    },
+    {
+      "uuid": "a1b2c3d4",
+      "question": "Quelle est la principale spécificité du management dans un projet informatique ?",
+      "options": [
+        "La stabilité des objectifs dans le temps",
+        "La forte dépendance aux procédures administratives",
+        "La complexité technique et l'évolution rapide des technologies",
+        "L'absence de contraintes budgétaires"
+      ],
+      "answer": "La complexité technique et l'évolution rapide des technologies"
+    },
+    {
+      "uuid": "b2c3d4e5",
+      "question": "Pourquoi la microgestion est-elle particulièrement contre-productive dans une équipe informatique ?",
+      "options": [
+        "Elle augmente les coûts matériels",
+        "Elle limite l'autonomie et démotive des profils souvent experts",
+        "Elle réduit la communication entre les équipes",
+        "Elle empêche l'utilisation des outils agiles"
+      ],
+      "answer": "Elle limite l'autonomie et démotive des profils souvent experts"
+    },
+    {
+      "uuid": "c3d4e5f6",
+      "question": "Quel style de management est le plus adapté à un collaborateur très compétent mais peu motivé (A3) ?",
+      "options": [
+        "Management directif (M1)",
+        "Management persuasif (M2)",
+        "Management participatif (M3)",
+        "Management délégatif (M4)"
+      ],
+      "answer": "Management participatif (M3)"
+    },
+    {
+      "uuid": "d4e5f6g7",
+      "question": "À quoi correspond l'autonomie d'un collaborateur selon le cours ?",
+      "options": [
+        "À son ancienneté dans l'entreprise",
+        "À sa capacité à travailler seul sans contrôle",
+        "À la combinaison de sa compétence et de sa motivation",
+        "À son niveau hiérarchique"
+      ],
+      "answer": "À la combinaison de sa compétence et de sa motivation"
+    },
+    {
+      "uuid": "e5f6g7h8",
+      "question": "Dans quel cas le management directif (M1) est-il le plus pertinent ?",
+      "options": [
+        "Avec une équipe experte et autonome",
+        "Dans un contexte d'urgence ou avec des collaborateurs peu autonomes",
+        "Lors d'une phase de créativité et d'innovation",
+        "En télétravail prolongé"
+      ],
+      "answer": "Dans un contexte d'urgence ou avec des collaborateurs peu autonomes"
+    },
+    {
+      "uuid": "f6g7h8i9",
+      "question": "Quel risque est associé à un management participatif mal maîtrisé ?",
+      "options": [
+        "Une surcharge administrative",
+        "Un manque de cadre pouvant nuire à la productivité",
+        "Une baisse de communication",
+        "Une perte totale d'autorité hiérarchique"
+      ],
+      "answer": "Un manque de cadre pouvant nuire à la productivité"
+    },
+    {
+      "uuid": "g7h8i9j0",
+      "question": "Quel est l'objectif principal du manager agile ?",
+      "options": [
+        "Contrôler chaque action de l'équipe",
+        "Créer les conditions favorables à l'autonomie et à la collaboration",
+        "Maximiser le temps de travail individuel",
+        "Réduire uniquement les coûts du projet"
+      ],
+      "answer": "Créer les conditions favorables à l'autonomie et à la collaboration"
+    },
+    {
+      "uuid": "h8i9j0k1",
+      "question": "Quel élément est essentiel pour maintenir la performance d'une équipe en télétravail ?",
+      "options": [
+        "Un contrôle permanent de l'activité",
+        "Des outils d'évaluation adaptés et des objectifs clairs",
+        "La suppression des réunions",
+        "Une communication exclusivement écrite"
+      ],
+      "answer": "Des outils d'évaluation adaptés et des objectifs clairs"
+    },
+    {
+      "uuid": "i9j0k1l2",
+      "question": "Lequel des comportements suivants est caractéristique d’un management toxique ?",
+      "options": [
+        "Feedback régulier et constructif",
+        "Reconnaissance des réussites collectives",
+        "Contrôle excessif et dévalorisation des collaborateurs",
+        "Encouragement de l'autonomie"
+      ],
+      "answer": "Contrôle excessif et dévalorisation des collaborateurs"
+    },
+    {
+      "uuid": "j0k1l2m3",
+      "question": "Pourquoi le management moderne met-il l'accent sur le bien-être au travail ?",
+      "options": [
+        "Pour réduire les charges patronales",
+        "Pour remplacer les objectifs de performance",
+        "Parce que le bien-être favorise durablement l'engagement et la performance",
+        "Pour limiter les besoins en formation"
+      ],
+      "answer": "Parce que le bien-être favorise durablement l'engagement et la performance"
+    },
+    {
+      "uuid": "k1l2m3n4",
+      "question": "Quel est le rôle principal du manager face à la montée en autonomie d’un collaborateur ?",
+      "options": [
+        "Confier une responsabilité de test",
+        "Renforcer le contrôle",
+        "Faire évoluer son style de management",
+        "Réduire les objectifs fixés"
+      ],
+      "answer": "Faire évoluer son style de management"
+    },
+    {
+      "uuid": "l2m3n4o5",
+      "question": "Quel levier favorise le plus l’auto-efficacité d’une équipe informatique ?",
+      "options": [
+        "Un espace de détente avec de la nourriture sucré et du café en libre service",
+        "La reconnaissance des compétences et des réussites",
+        "Des procédures et méthodes strictement appliquées",
+        "Le contrôle qualité régulier"
+      ],
+      "answer": "La reconnaissance des compétences et des réussites"
     }
   ]
 }

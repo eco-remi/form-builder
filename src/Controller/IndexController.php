@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Dto\Form;
 use App\Service\FormApi;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Attribute\MapQueryParameter;
@@ -16,6 +17,7 @@ class IndexController extends AbstractController
 {
     public function __construct(
         private FormApi $formApi,
+        #[Autowire('%env(SECURITY_TOKEN)%')]
         private string  $token = 'security',
     )
     {
@@ -32,6 +34,7 @@ class IndexController extends AbstractController
         $session = $request->getSession();
 
         // load static form
+        $this->formApi->slug = $slug;
         $form = $this->formApi->getForm($session->get('currentUuid') ?? null);
 
         $session->set('currentUuid', $form->uuid);
