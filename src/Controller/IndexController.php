@@ -19,6 +19,8 @@ class IndexController extends AbstractController
         private FormApi $formApi,
         #[Autowire('%env(SECURITY_TOKEN)%')]
         private string  $token = 'security',
+        #[Autowire('%env(MIRO_LINK)%')]
+        private string  $miroLink = '',
     )
     {
     }
@@ -79,11 +81,14 @@ class IndexController extends AbstractController
         // load static form
         $form = $this->formApi->getForm();
 
+        $message = '<h2 style="text-align: center;padding-top: 20%;">Merci de votre participation ! 👍</h2>';
+        $message .= sprintf('<br/><a href="%s">Rendez vous sur Miro.com pour patienter...</a>', $this->miroLink);
+
         return $this->render(
             'index.html.twig',
             [
                 'title' => $form->title,
-                'message' => '<h2 style="text-align: center;padding-top: 20%;">Merci de votre participation ! 👍</h2>',
+                'message' => $message
             ]
         );
     }
