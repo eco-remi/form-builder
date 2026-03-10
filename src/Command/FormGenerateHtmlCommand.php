@@ -33,7 +33,7 @@ class FormGenerateHtmlCommand extends Command
 
         $name = 'Rémi';
 
-        file_put_contents(__DIR__ . '/../../public/form/'
+        file_put_contents(__DIR__ . '/../../public/result-form/'
             . $name . '_qcm.html',
             $this->client->request('GET', 'https://127.0.0.1:8000/form?slug=qcm&name=' . $name)->getContent()
         );
