@@ -1,0 +1,464 @@
+[
+  {
+    "uuid": "df4cf1c7-b268-4488-8c69-f06016d4710d",
+    "question": "Comment est organisée une base de données hiérarchique ?",
+    "options": [
+      "En paires clé-valeur indépendantes",
+      "En tables reliées par des clés étrangères",
+      "En arbre, chaque élément n'ayant qu'un seul parent",
+      "En graphe où chaque nœud peut avoir plusieurs parents"
+    ],
+    "answer": "En arbre, chaque élément n'ayant qu'un seul parent"
+  },
+  {
+    "uuid": "7e24186a-ab80-426a-b4a9-15f32d33ab22",
+    "question": "Pour quel programme spatial les premières bases hiérarchiques ont-elles été utilisées ?",
+    "options": [
+      "Le programme Concorde",
+      "Le réseau ARPANET",
+      "Le Minitel",
+      "Les missions Apollo"
+    ],
+    "answer": "Les missions Apollo"
+  },
+  {
+    "uuid": "36f3a9ac-4cf0-4610-8cf1-7302f53a2bb4",
+    "question": "Quelle est la différence principale entre une base hiérarchique et une base réseau ?",
+    "options": [
+      "La base réseau utilise SQL",
+      "La base réseau autorise plusieurs parents (relations N-N)",
+      "La base réseau ne stocke que des documents JSON",
+      "La base réseau est organisée en tables"
+    ],
+    "answer": "La base réseau autorise plusieurs parents (relations N-N)"
+  },
+  {
+    "uuid": "5a130078-44ba-4e2c-a1e3-9f7d5d622516",
+    "question": "Quelle limite des bases de données réseau a freiné leur diffusion et favorisé l'arrivée du relationnel ?",
+    "options": [
+      "L'absence de support du stockage sur disque",
+      "Un coût de licence prohibitif",
+      "Une trop grande dépendance entre les données et les programmes",
+      "Une impossibilité de gérer plusieurs parents"
+    ],
+    "answer": "Une trop grande dépendance entre les données et les programmes"
+  },
+  {
+    "uuid": "f0c5e2aa-872c-44ad-b6fc-40b88c8770d4",
+    "question": "À qui doit-on l'algèbre relationnelle, à la base des bases de données relationnelles ?",
+    "options": [
+      "Juan Benet",
+      "E.F. Codd",
+      "C.W. Bachman",
+      "Eric Brewer"
+    ],
+    "answer": "E.F. Codd"
+  },
+  {
+    "uuid": "d0446f3f-0aab-450d-903c-7749c9dcc3e4",
+    "question": "Quel est le principal reproche fait au modèle relationnel face aux données issues d'Internet ?",
+    "options": [
+      "Une incapacité à gérer les transactions",
+      "Une fiabilité insuffisante pour les systèmes critiques",
+      "Une structure trop rigide pour des données hétérogènes",
+      "Une absence de langage standard"
+    ],
+    "answer": "Une structure trop rigide pour des données hétérogènes"
+  },
+  {
+    "uuid": "7f6076ce-6fe0-4366-981d-3e43fd65bac7",
+    "question": "Que signifie l'acronyme NoSQL ?",
+    "options": [
+      "Non-relational Structured Query Language",
+      "Network of SQL",
+      "New Optimized SQL",
+      "Not only SQL"
+    ],
+    "answer": "Not only SQL"
+  },
+  {
+    "uuid": "1c4c5bac-1b64-4cf6-879d-934a653adb0e",
+    "question": "Quelle modification est souvent complexe, voire source de temps d'arrêt, dans une base relationnelle ?",
+    "options": [
+      "L'exécution d'un SELECT",
+      "La modification du schéma",
+      "La lecture d'une table",
+      "L'ajout d'un utilisateur"
+    ],
+    "answer": "La modification du schéma"
+  },
+  {
+    "uuid": "5ed1522d-31fe-42d2-8402-0b7c27d43b65",
+    "question": "Quelle entreprise est considérée comme précurseur du SaaS dès 1999 ?",
+    "options": [
+      "Amazon (AWS)",
+      "Google",
+      "Salesforce",
+      "Microsoft"
+    ],
+    "answer": "Salesforce"
+  },
+  {
+    "uuid": "b29d0437-43a7-4796-8c7f-b195fcff40a5",
+    "question": "Dans quel modèle de cloud loue-t-on directement des serveurs (l'infrastructure) ?",
+    "options": [
+      "PaaS",
+      "Sur site",
+      "SaaS",
+      "IaaS"
+    ],
+    "answer": "IaaS"
+  },
+  {
+    "uuid": "c67f9897-e7c3-4b7e-bd2f-dff7eca4d13a",
+    "question": "Lequel de ces points est un inconvénient des bases de données dans le cloud ?",
+    "options": [
+      "L'absence de virtualisation",
+      "Un coût récurrent à long terme",
+      "Une installation très longue",
+      "Une impossibilité de monter en charge"
+    ],
+    "answer": "Un coût récurrent à long terme"
+  },
+  {
+    "uuid": "7fdaf0f0-52d2-40e1-ae6c-4ad17c811a2c",
+    "question": "Quelle est l'ambition initiale d'IPFS ?",
+    "options": [
+      "Fournir un cache en mémoire ultra-rapide",
+      "Remplacer SQL par un langage orienté graphe",
+      "Stocker toutes les données dans un datacenter unique",
+      "Fonctionner de façon décentralisée en pair-à-pair, même face à un réseau morcelé"
+    ],
+    "answer": "Fonctionner de façon décentralisée en pair-à-pair, même face à un réseau morcelé"
+  },
+  {
+    "uuid": "60c44adf-01d4-407c-9d23-e68fb1733a44",
+    "question": "Quelle plateforme de stockage décentralisée s'appuie sur IPFS ?",
+    "options": [
+      "LinkedIn",
+      "Databricks",
+      "Filecoin",
+      "Snowflake"
+    ],
+    "answer": "Filecoin"
+  },
+  {
+    "uuid": "159ce2e7-e572-4119-b47e-40a8249f59c2",
+    "question": "Quel avantage les bases graphe ont-elles sur les bases relationnelles pour parcourir des relations ?",
+    "options": [
+      "Elles garantissent des transactions ACID",
+      "Elles stockent uniquement des fichiers multimédias",
+      "Elles évitent les jointures coûteuses grâce à des pointeurs physiques entre les nœuds",
+      "Elles n'ont besoin d'aucun index"
+    ],
+    "answer": "Elles évitent les jointures coûteuses grâce à des pointeurs physiques entre les nœuds"
+  },
+  {
+    "uuid": "af43cd08-ff48-49e1-872f-c87ef4cce202",
+    "question": "Comment est structuré un triplet RDF ?",
+    "options": [
+      "Clé – Valeur – TTL",
+      "Nœud – Index – Propriété",
+      "Table – Colonne – Ligne",
+      "Sujet – Prédicat – Objet"
+    ],
+    "answer": "Sujet – Prédicat – Objet"
+  },
+  {
+    "uuid": "66c56c0c-8010-4982-95c2-8eb0ef3f18b9",
+    "question": "Quel langage permet d'interroger un triplestore ?",
+    "options": [
+      "SPARQL",
+      "OQL",
+      "Lua",
+      "XPath"
+    ],
+    "answer": "SPARQL"
+  },
+  {
+    "uuid": "c1df0200-2b46-40e3-a029-2baee10bd623",
+    "question": "Qu'est-ce qui caractérise une base de données de séries chronologiques ?",
+    "options": [
+      "Les données sont stockées avec un horodatage pour suivre leur évolution",
+      "Les données sont stockées sous forme de triplets",
+      "Les données sont ordonnées en arbre",
+      "Les données sont uniquement textuelles"
+    ],
+    "answer": "Les données sont stockées avec un horodatage pour suivre leur évolution"
+  },
+  {
+    "uuid": "66572f2d-31c4-432e-bc69-3ca39a2acc13",
+    "question": "Quel phénomène explique la forte croissance des bases de séries chronologiques ?",
+    "options": [
+      "La généralisation d'OQL",
+      "L'essor d'Internet et des objets connectés",
+      "Le retour des bases hiérarchiques",
+      "L'abandon du cloud"
+    ],
+    "answer": "L'essor d'Internet et des objets connectés"
+  },
+  {
+    "uuid": "8c3cb964-edc6-4383-9767-58cdb671c60f",
+    "question": "Quel langage de requête est associé aux bases de données orientées objet ?",
+    "options": [
+      "REST",
+      "OQL",
+      "BSON",
+      "SPARQL"
+    ],
+    "answer": "OQL"
+  },
+  {
+    "uuid": "2a285cfc-33ef-4537-ab35-0fbcb6e32f4b",
+    "question": "Quelle limite des bases de données orientées objet est évoquée dans le cours ?",
+    "options": [
+      "Elles exigent un schéma tabulaire",
+      "Elles ne peuvent stocker que du texte",
+      "Elles n'ont aucun langage de requête",
+      "Elles restent très théoriques et peu utilisées en production"
+    ],
+    "answer": "Elles restent très théoriques et peu utilisées en production"
+  },
+  {
+    "uuid": "6fa9c107-f0cd-413b-963d-e4b613a9e2a0",
+    "question": "Dans une réservation, soit les sièges et les informations client sont mis à jour ensemble, soit aucune modification n'est effectuée. Quelle propriété ACID est illustrée ?",
+    "options": [
+      "Atomicité",
+      "Isolation",
+      "Cohérence",
+      "Durabilité"
+    ],
+    "answer": "Atomicité"
+  },
+  {
+    "uuid": "34a456ff-b586-476a-aac0-3118e201c6ff",
+    "question": "Quelle propriété ACID garantit qu'un utilisateur ne voit les mises à jour d'inventaire d'un autre qu'une fois la transaction terminée ?",
+    "options": [
+      "Atomicité",
+      "Isolation",
+      "Durabilité",
+      "Cohérence"
+    ],
+    "answer": "Isolation"
+  },
+  {
+    "uuid": "6a802ef8-8339-4492-bdb4-76539dfb1158",
+    "question": "Dans le modèle BASE, que signifie « Eventually Consistent » ?",
+    "options": [
+      "Les données sont peut être cohérentes après une sauvegarde",
+      "Les données sont toujours cohérentes instantanément",
+      "Les données ne sont jamais cohérentes",
+      "Les données finissent par devenir cohérentes une fois les mises à jour propagées"
+    ],
+    "answer": "Les données finissent par devenir cohérentes une fois les mises à jour propagées"
+  },
+  {
+    "uuid": "98f5e344-e65a-44b3-b74e-dfeef1cd6737",
+    "question": "Dans le modèle BASE, que signifie « Soft State » ?",
+    "options": [
+      "Les données sont stockées uniquement en mémoire",
+      "Les données peuvent évoluer au fil du temps, même sans nouvelle entrée",
+      "Les données sont chiffrées par défaut",
+      "Les données sont immuables"
+    ],
+    "answer": "Les données peuvent évoluer au fil du temps, même sans nouvelle entrée"
+  },
+  {
+    "uuid": "b1a23b2c-bb7e-4dd4-aa84-c8485179d7ed",
+    "question": "Dans le théorème CAP, que signifie la tolérance au partitionnement ?",
+    "options": [
+      "Chaque lecture renvoie la donnée la plus récente",
+      "Le système continue de fonctionner malgré des messages perdus ou retardés entre les nœuds",
+      "Le système découpe automatiquement les tables",
+      "Chaque requête reçoit une réponse"
+    ],
+    "answer": "Le système continue de fonctionner malgré des messages perdus ou retardés entre les nœuds"
+  },
+  {
+    "uuid": "4e245baa-0746-4d75-9aab-d1db550cb909",
+    "question": "Quelle est la caractéristique d'une base de données centralisée ?",
+    "options": [
+      "Les données sont toujours en mémoire vive",
+      "Les données sont répliquées sur plusieurs sites",
+      "Les données sont échangées en pair-à-pair",
+      "Les données sont stockées à un seul endroit"
+    ],
+    "answer": "Les données sont stockées à un seul endroit"
+  },
+  {
+    "uuid": "9a5fd0e7-e94e-456c-ae2e-ea6000c612b8",
+    "question": "Quel type de base est généralement composé d'un fichier unique, lié dynamiquement à un logiciel ?",
+    "options": [
+      "Une base embarquée",
+      "Une base distribuée",
+      "Une base centralisée",
+      "Une base spatiale"
+    ],
+    "answer": "Une base embarquée"
+  },
+  {
+    "uuid": "d4240377-24a7-46f4-aba1-537e08ce2669",
+    "question": "Quel type de base stocke des points, des lignes, des coordonnées ou des volumes, pour les SIG et la CAO ?",
+    "options": [
+      "Une base spatiale",
+      "Une base embarquée",
+      "Une base hiérarchique",
+      "Une base clé-valeur"
+    ],
+    "answer": "Une base spatiale"
+  },
+  {
+    "uuid": "d9042ff6-0599-4a05-a591-c8f2c0556b25",
+    "question": "Quelle tendance est observée en 2024 parmi les bases relationnelles ?",
+    "options": [
+      "Les bases relationnelles disparaissent",
+      "MySQL progresse tandis que PostgreSQL recule",
+      "Oracle devient open source",
+      "PostgreSQL progresse tandis que MySQL perd du terrain"
+    ],
+    "answer": "PostgreSQL progresse tandis que MySQL perd du terrain"
+  },
+  {
+    "uuid": "4985563b-26ea-4099-9546-40806c88a503",
+    "question": "Que caractérise PostgreSQL ?",
+    "options": [
+      "Un SGBD clé-valeur développé par Redis Labs",
+      "Un SGBD relationnel et objet, libre, porté par une communauté mondiale",
+      "Un SGBD orienté documents créé par MongoDB Inc.",
+      "Un SGBD graphe propriétaire"
+    ],
+    "answer": "Un SGBD relationnel et objet, libre, porté par une communauté mondiale"
+  },
+  {
+    "uuid": "4854e56c-9dc9-4469-9669-d20d22ad30e8",
+    "question": "Quelle limite de MongoDB est citée dans le cours ?",
+    "options": [
+      "Il ne stocke pas de JSON",
+      "Il exige un schéma strict",
+      "Il n'est pas scalable horizontalement",
+      "Il ne supporte pas les jointures"
+    ],
+    "answer": "Il ne supporte pas les jointures"
+  },
+  {
+    "uuid": "96b4ba51-09be-49f4-88a4-df499e4f1b52",
+    "question": "Quelle contrainte importante faut-il respecter avec Redis ?",
+    "options": [
+      "Le jeu de données doit tenir confortablement en mémoire",
+      "Il ne gère que du texte",
+      "Il exige un schéma relationnel",
+      "Il nécessite un serveur par clé"
+    ],
+    "answer": "Le jeu de données doit tenir confortablement en mémoire"
+  },
+  {
+    "uuid": "f9cf04c6-83b8-4967-8846-66ae8f8ed3e1",
+    "question": "Quel moteur d'indexation et de recherche Elasticsearch utilise-t-il ?",
+    "options": [
+      "BSON",
+      "WiredTiger",
+      "Apache Lucene",
+      "Redis Sentinel"
+    ],
+    "answer": "Apache Lucene"
+  },
+  {
+    "uuid": "f80d86e0-0587-40cd-b9a2-df822145c5b9",
+    "question": "Pour quel usage LinkedIn utilise-t-il Neo4j ?",
+    "options": [
+      "Le stockage des sessions",
+      "Les files d'attente de tâches",
+      "Les recommandations « People You May Know »",
+      "L'archivage d'articles"
+    ],
+    "answer": "Les recommandations « People You May Know »"
+  },
+  {
+    "uuid": "25275632-77f4-493b-bf31-595427e1c5e7",
+    "question": "Pour quel usage eBay utilise-t-il Neo4j ?",
+    "options": [
+      "Archiver des articles de presse",
+      "Gérer un cache de sessions",
+      "Détecter des fraudes",
+      "Stocker des logs en écriture intensive"
+    ],
+    "answer": "Détecter des fraudes"
+  },
+  {
+    "uuid": "367d95f5-4ce7-406f-a49f-83707e06831f",
+    "question": "Quelle entreprise utilise Apache Cassandra pour les recommandations personnalisées et l'historique de visionnage ?",
+    "options": [
+      "eBay",
+      "LinkedIn",
+      "Netflix",
+      "GitHub"
+    ],
+    "answer": "Netflix"
+  },
+  {
+    "uuid": "a6b2921d-83d5-424a-a598-adb61ccf7750",
+    "question": "Pour quoi GitHub utilise-t-il Redis ?",
+    "options": [
+      "Sa file d'attente de tâches en arrière-plan",
+      "La modélisation des relations entre développeurs",
+      "Le stockage des dépôts Git",
+      "L'archivage d'articles"
+    ],
+    "answer": "Sa file d'attente de tâches en arrière-plan"
+  },
+  {
+    "uuid": "51b93386-e608-49f6-a7ad-9a65500ed68d",
+    "question": "Pour quel usage The New York Times utilise-t-il MongoDB ?",
+    "options": [
+      "Compter les followers en temps réel",
+      "Détecter des fraudes",
+      "Gérer des files d'attente",
+      "Archiver des millions d'articles au format JSON et faciliter leur recherche"
+    ],
+    "answer": "Archiver des millions d'articles au format JSON et faciliter leur recherche"
+  },
+  {
+    "uuid": "51b43c71-0909-4768-90b6-8eff9b1377d7",
+    "question": "Quelle particularité a Google Spanner ?",
+    "options": [
+      "Il regroupe des charges relationnelles, graphe, clé-valeur et recherche dans une base unique",
+      "Il est exclusivement clé-valeur",
+      "Il fonctionne uniquement en local sur un seul serveur",
+      "Il renonce à la réplication"
+    ],
+    "answer": "Il regroupe des charges relationnelles, graphe, clé-valeur et recherche dans une base unique"
+  },
+  {
+    "uuid": "4937bd3b-f17f-438f-99dd-31a00a319a72",
+    "question": "Pourquoi une base documentaire convient-elle à un catalogue de produits très variés (tailles, couleurs...) ?",
+    "options": [
+      "Parce que chaque produit peut avoir des attributs différents sans schéma strict",
+      "Parce qu'elle garantit des transactions ACID entre magasins",
+      "Parce qu'elle ne stocke que des nombres",
+      "Parce qu'elle gère mieux les jointures"
+    ],
+    "answer": "Parce que chaque produit peut avoir des attributs différents sans schéma strict"
+  },
+  {
+    "uuid": "3be851d2-3d98-421a-a763-29275dd7c7f1",
+    "question": "Quel rêve du W3C est évoqué à propos des bases de données ontologiques ?",
+    "options": [
+      "Un Internet qui parlerait un langage unique, celui de la donnée qualifiée",
+      "La suppression des bases relationnelles",
+      "Un SQL universel pour tous les SGBD",
+      "Un cloud public unique pour toutes les données"
+    ],
+    "answer": "Un Internet qui parlerait un langage unique, celui de la donnée qualifiée"
+  },
+  {
+    "uuid": "aa6041b2-63ba-4a4c-96a3-4527a576156e",
+    "question": "Selon la conclusion du cours, quel est le nouveau paradigme actuel ?",
+    "options": [
+      "La centralisation de toutes les données dans un seul cloud",
+      "Le retour aux bases hiérarchiques",
+      "L'économie de ressources pour un numérique plus sobre : éco-conception et hybridation des technologies",
+      "La généralisation du SQL partout"
+    ],
+    "answer": "L'économie de ressources pour un numérique plus sobre : éco-conception et hybridation des technologies"
+  }
+]

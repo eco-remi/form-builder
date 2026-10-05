@@ -17,9 +17,119 @@
     },
     {
       "uuid": "99689cc3-78f2-4baf-bd64-6b21c7055365",
-      "question": "Quel est le principal compromis dans le théorème CAP (Consistency, Availability, Partition tolerance) des bases de données distribuées ?",
+      "question": "Quel est le principal compromis dans le théorème CAP (Consistency, Availability, Partition tolerance) des bases de données distribuées ou les systèmes partitionnés ?",
       "options": ["Performance ou Latence", "Coût ou Scalabilité", "Sécurité ou Accessibilité", "Consistance ou Disponibilité"],
       "answer": "Consistance ou Disponibilité"
+    },
+    {
+      "uuid": "b4ab441e-7510-404e-b119-a1c3366a5fe4",
+      "question": "Quel étage du pipeline d'agrégation MongoDB permet de réaliser l'équivalent d'une jointure externe gauche avec une autre collection ?",
+      "options": [
+        "$unwind",
+        "$facet",
+        "$merge",
+        "$lookup"
+      ],
+      "answer": "$lookup"
+    },
+    {
+      "uuid": "344abc7c-d57f-44f1-82f6-c8b8ef569616",
+      "question": "Quelle structure Redis est la plus adaptée pour un classement (leaderboard) en temps réel ?",
+      "options": [
+        "Hash",
+        "List",
+        "Set",
+        "Sorted Set"
+      ],
+      "answer": "Sorted Set"
+    },
+    {
+      "uuid": "9ed26b7c-99a4-4d28-8e7a-b61749cb568d",
+      "question": "Quelle technique permet de réduire le volume d'une base de séries temporelles tout en conservant la tendance des données anciennes ?",
+      "options": [
+        "L'ajout d'index composés",
+        "Le sharding par clé de hachage",
+        "La réplication synchrone",
+        "Le downsampling (agrégation) combiné à une politique de rétention"
+      ],
+      "answer": "Le downsampling (agrégation) combiné à une politique de rétention"
+    },
+    {
+      "uuid": "5a130078-44ba-4e2c-a1e3-9f7d5d622516",
+      "question": "Quelle limite des bases de données réseau a freiné leur diffusion et favorisé l'arrivée du relationnel ?",
+      "options": [
+        "L'absence de support du stockage sur disque",
+        "Un coût de licence prohibitif",
+        "Une trop grande dépendance entre les données et les programmes",
+        "Une impossibilité de gérer plusieurs parents"
+      ],
+      "answer": "Une trop grande dépendance entre les données et les programmes"
+    },
+    {
+      "uuid": "f0c5e2aa-872c-44ad-b6fc-40b88c8770d4",
+      "question": "À qui doit-on l'algèbre relationnelle, à la base des bases de données relationnelles ?",
+      "options": [
+        "Juan Benet",
+        "E.F. Codd",
+        "C.W. Bachman",
+        "Eric Brewer"
+      ],
+      "answer": "E.F. Codd"
+    },
+    {
+      "uuid": "d0446f3f-0aab-450d-903c-7749c9dcc3e4",
+      "question": "Quel est le principal reproche fait au modèle relationnel face aux données issues d'Internet ?",
+      "options": [
+        "Une incapacité à gérer les transactions",
+        "Une fiabilité insuffisante pour les systèmes critiques",
+        "Une structure trop rigide pour des données hétérogènes",
+        "Une absence de langage standard"
+      ],
+      "answer": "Une structure trop rigide pour des données hétérogènes"
+    },
+    {
+      "uuid": "df4cf1c7-b268-4488-8c69-f06016d4710d",
+      "question": "Comment est organisée une base de données hiérarchique ?",
+      "options": [
+        "En paires clé-valeur indépendantes",
+        "En tables reliées par des clés étrangères",
+        "En arbre, chaque élément n'ayant qu'un seul parent",
+        "En graphe où chaque nœud peut avoir plusieurs parents"
+      ],
+      "answer": "En arbre, chaque élément n'ayant qu'un seul parent"
+    },
+    {
+      "uuid": "3fcf1889-a942-447c-a3d9-982917ecfd68",
+      "question": "Une boutique utilise PostgreSQL pour les commandes, Redis pour les sessions et Elasticsearch pour la recherche produit. Comment nomme-t-on cette approche ?",
+      "options": [
+        "Le sharding fonctionnel",
+        "La scalabilité verticale",
+        "L'architecture hexagonale",
+        "La persistance polyglotte"
+      ],
+      "answer": "La persistance polyglotte"
+    },
+    {
+      "uuid": "855e8b31-6d50-4475-8d34-cc2ad1af5541",
+      "question": "Quelle pratique réduit le plus durablement l'empreinte d'une base de données en production dans une démarche d'éco-conception ?",
+      "options": [
+        "Conserver toutes les données en mémoire vive",
+        "Désactiver tous les index pour économiser du stockage",
+        "Une politique de cycle de vie des données : archivage et suppression des données froides ou inutiles",
+        "Multiplier les réplicas par précaution"
+      ],
+      "answer": "Une politique de cycle de vie des données : archivage et suppression des données froides ou inutiles"
+    },
+    {
+      "uuid": "72c300f3-da57-4622-be82-d33471409562",
+      "question": "Que retourne ce pipeline MongoDB sur une collection commandes ?\n\n`db.commandes.aggregate([{$match:{statut:\"payée\"}},{$group:{_id:\"$client\",total:{$sum:\"$montant\"}}},{$sort:{total:-1}},{$limit:3}])`",
+      "options": [
+        "Les 3 commandes payées au montant le plus élevé",
+        "Les 3 clients ayant passé le moins de commandes",
+        "Le montant total des 3 dernières commandes payées",
+        "Les 3 clients ayant le plus dépensé sur leurs commandes payées"
+      ],
+      "answer": "Les 3 clients ayant le plus dépensé sur leurs commandes payées"
     },
     {
       "uuid": "5380df7f-fa26-4ce8-bb0f-fe213987b49f",
@@ -58,7 +168,7 @@
       "answer": "Augmenter ou réduire le nombre de machine"
     },
     {
-      "uuid": "2088c965-2f54-4351-b341-bisbc345dcbd",
+      "uuid": "2075ce969-2f54-4351-b341-bisbc345z3t5",
       "question": "Que signifie la Scalabilité verticale ?",
       "options": ["Augmenter ou réduire la mémoire vive", "Augmenter ou réduire les volumes de stockage", "Augmenter ou réduire la puissance du processeur", "Augmenter ou réduire le nombre de machine"],
       "answer": "Augmenter ou réduire la puissance du processeur"
@@ -108,8 +218,8 @@
     {
       "uuid": "9922ed4f-8a02-478b-bab7-0bc36026c3b9",
       "question": "Quel est la principale utilité des bases de données en colonne comme Cassandra dans les systèmes distribués ?",
-      "options": ["Support des requêtes complexes", "Réplication automatique", "Aggregation statistique", "Gestion de transactions ACID"],
-      "answer": "Aggregation statistique"
+      "options": ["Support des requêtes complexes", "Réplication automatique", "Écriture intensive", "Gestion de transactions ACID"],
+      "answer": "Écriture intensive"
     },
     {
       "uuid": "50983161-a1f0-480a-84e8-072afea0a34e",
@@ -119,15 +229,9 @@
     },
     {
       "uuid": "18463176-a83a-4fab-880a-9d404e61828d",
-      "question": "Quelle base de données choisir pour avoir une haute disponibilité sur des agrégations de données pré-calculés",
+      "question": "Quelle base de données choisir pour avoir une haute disponibilité sur des affichages de données pré-calculés",
       "options": ["VoltDB", "MongoDB", "Redis", "Neo4j"],
       "answer": "Redis"
-    },
-    {
-      "uuid": "fee83f81-17a3-4d1f-94ed-21658d4022ad",
-      "question": "Pourquoi les bases de données en mémoire sont-elles souvent préférées dans des contextes d'éco-conception ?",
-      "options": ["Parce qu'elles sont moins coûteuses", "Parce qu'elles consomment moins d'énergie", "Parce qu'elles sont plus sécurisées", "Parce qu'elles sont plus faciles à administrer"],
-      "answer": "Parce qu'elles consomment moins d'énergie"
     },
     {
       "uuid": "08ec273b-2a04-4c03-8d19-0017d55eb8ec",
@@ -294,8 +398,8 @@
     {
       "uuid": "37d5439b-b0c3-4a4c-a316-cad4f2f5e5b9",
       "question": "Quel opérateur MongoDB permet de rechercher des documents dont une valeur est supérieure à un certain seuil ?",
-      "options": ["$eq", "$lt", "$gte", "$regex"],
-      "answer": "$gte"
+      "options": ["$eq", "$lt", "$gte", "gt"],
+      "answer": "$gt"
     },
     {
       "uuid": "c68c67a5-51c0-4b21-bb44-9a3b252b6f3d",
@@ -392,6 +496,127 @@
       "question": "Une base centralisée est adaptée lorsque :",
       "options": ["Le volume de données est faible et les utilisateurs sont localisés", "Les données doivent être disponibles mondialement", "La scalabilité horizontale est prioritaire", "Les pannes réseau sont fréquentes"],
       "answer": "Le volume de données est faible et les utilisateurs sont localisés"
+    },
+    {
+      "uuid": "7f6076ce-6fe0-4366-981d-3e43fd65bac7",
+      "question": "Que signifie l'acronyme NoSQL ?",
+      "options": [
+        "Non-relational Structured Query Language",
+        "Network of SQL",
+        "New Optimized SQL",
+        "Not only SQL"
+      ],
+      "answer": "Not only SQL"
+    },
+    {
+      "uuid": "5ed1522d-31fe-42d2-8402-0b7c27d43b65",
+      "question": "Quelle entreprise est considérée comme précurseur du SaaS dès 1999 ?",
+      "options": [
+        "Amazon (AWS)",
+        "Google",
+        "Salesforce",
+        "Microsoft"
+      ],
+      "answer": "Salesforce"
+    },
+    {
+      "uuid": "b29d0437-43a7-4796-8c7f-b195fcff40a5",
+      "question": "Dans quel modèle de cloud loue-t-on directement des serveurs (l'infrastructure) ?",
+      "options": [
+        "PaaS",
+        "Sur site",
+        "SaaS",
+        "IaaS"
+      ],
+      "answer": "IaaS"
+    },
+    {
+      "uuid": "159ce2e7-e572-4119-b47e-40a8249f59c2",
+      "question": "Quel avantage les bases graphe ont-elles sur les bases relationnelles pour parcourir des relations ?",
+      "options": [
+        "Elles garantissent des transactions ACID",
+        "Elles stockent uniquement des fichiers multimédias",
+        "Elles évitent les jointures coûteuses grâce à des pointeurs physiques entre les nœuds",
+        "Elles n'ont besoin d'aucun index"
+      ],
+      "answer": "Elles évitent les jointures coûteuses grâce à des pointeurs physiques entre les nœuds"
+    },
+    {
+      "uuid": "af43cd08-ff48-49e1-872f-c87ef4cce202",
+      "question": "Comment est structuré un triplet RDF ?",
+      "options": [
+        "Clé – Valeur – TTL",
+        "Nœud – Index – Propriété",
+        "Table – Colonne – Ligne",
+        "Sujet – Prédicat – Objet"
+      ],
+      "answer": "Sujet – Prédicat – Objet"
+    },
+    {
+      "uuid": "6fa9c107-f0cd-413b-963d-e4b613a9e2a0",
+      "question": "Dans une réservation, soit les sièges et les informations client sont mis à jour ensemble, soit aucune modification n'est effectuée. Quelle propriété ACID est illustrée ?",
+      "options": [
+        "Atomicité",
+        "Isolation",
+        "Cohérence",
+        "Durabilité"
+      ],
+      "answer": "Atomicité"
+    },
+    {
+      "uuid": "98f5e344-e65a-44b3-b74e-dfeef1cd6737",
+      "question": "Dans le modèle BASE, que signifie « Soft State » ?",
+      "options": [
+        "Les données sont stockées uniquement en mémoire",
+        "Les données peuvent évoluer au fil du temps, même sans nouvelle entrée",
+        "Les données sont chiffrées par défaut",
+        "Les données sont immuables"
+      ],
+      "answer": "Les données peuvent évoluer au fil du temps, même sans nouvelle entrée"
+    },
+    {
+      "uuid": "b1a23b2c-bb7e-4dd4-aa84-c8485179d7ed",
+      "question": "Dans le théorème CAP, que signifie la tolérance au partitionnement ?",
+      "options": [
+        "Chaque lecture renvoie la donnée la plus récente",
+        "Le système continue de fonctionner malgré des messages perdus ou retardés entre les nœuds",
+        "Le système découpe automatiquement les tables",
+        "Chaque requête reçoit une réponse"
+      ],
+      "answer": "Le système continue de fonctionner malgré des messages perdus ou retardés entre les nœuds"
+    },
+    {
+      "uuid": "9a5fd0e7-e94e-456c-ae2e-ea6000c612b8",
+      "question": "Quel type de base est généralement composé d'un fichier unique, lié dynamiquement à un logiciel ?",
+      "options": [
+        "Une base embarquée",
+        "Une base distribuée",
+        "Une base centralisée",
+        "Une base spatiale"
+      ],
+      "answer": "Une base embarquée"
+    },
+    {
+      "uuid": "25275632-77f4-493b-bf31-595427e1c5e7",
+      "question": "Pour quel usage eBay utilise-t-il Neo4j ?",
+      "options": [
+        "Archiver des articles de presse",
+        "Gérer un cache de sessions",
+        "Détecter des fraudes",
+        "Stocker des logs en écriture intensive"
+      ],
+      "answer": "Détecter des fraudes"
+    },
+    {
+      "uuid": "3be851d2-3d98-421a-a763-29275dd7c7f1",
+      "question": "Quel rêve du W3C est évoqué à propos des bases de données ontologiques ?",
+      "options": [
+        "Un Internet qui parlerait un langage unique, celui de la donnée qualifiée",
+        "La suppression des bases relationnelles",
+        "Un SQL universel pour tous les SGBD",
+        "Un cloud public unique pour toutes les données"
+      ],
+      "answer": "Un Internet qui parlerait un langage unique, celui de la donnée qualifiée"
     }
   ]
 }

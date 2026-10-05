@@ -1,0 +1,310 @@
+[
+  {
+    "uuid": "e6aab799-2809-438f-b1e9-5054936f3538",
+    "question": "Dans un cluster Cassandra avec un facteur de réplication de 3, quelle combinaison de niveaux de consistance lecture/écriture garantit de lire la dernière écriture validée ?",
+    "options": [
+      "R=ONE (1) et W=QUORUM (2)",
+      "R=ONE (1) et W=ONE (1)",
+      "R=ONE (1) et W=ANY",
+      "R=QUORUM (2) et W=QUORUM (2)"
+    ],
+    "answer": "R=QUORUM (2) et W=QUORUM (2)"
+  },
+  {
+    "uuid": "54dbfc56-652b-4ab9-b645-2e46ad1e4c67",
+    "question": "Lors d'une partition réseau, que fait un système distribué configuré « CP » ?",
+    "options": [
+      "Il bascule automatiquement en mode ACID",
+      "Il abandonne la tolérance au partitionnement",
+      "Il refuse ou retarde certaines requêtes pour préserver la cohérence",
+      "Il continue de répondre partout, quitte à renvoyer des données périmées"
+    ],
+    "answer": "Il refuse ou retarde certaines requêtes pour préserver la cohérence"
+  },
+  {
+    "uuid": "1fbb43a4-3b80-4347-84c2-c1d5014ccbcd",
+    "question": "Pourquoi considère-t-on qu'un choix « CA » n'a pas de sens pour un système réellement distribué ?",
+    "options": [
+      "Parce que cohérence et disponibilité sont toujours incompatibles",
+      "Parce que la disponibilité ne peut pas être mesurée",
+      "Parce que le théorème CAP ne s'applique qu'aux bases NoSQL",
+      "Parce que les partitions réseau ne peuvent pas être évitées en pratique : la tolérance au partitionnement est subie, pas choisie"
+    ],
+    "answer": "Parce que les partitions réseau ne peuvent pas être évitées en pratique : la tolérance au partitionnement est subie, pas choisie"
+  },
+  {
+    "uuid": "2449f617-8269-40ed-93aa-13afafd853a6",
+    "question": "Que ajoute le théorème PACELC au théorème CAP ?",
+    "options": [
+      "Un quatrième critère de sécurité des données",
+      "Une distinction entre bases relationnelles et non relationnelles",
+      "Même sans partition réseau, il existe un compromis entre latence et cohérence",
+      "Une garantie de durabilité en cas de panne"
+    ],
+    "answer": "Même sans partition réseau, il existe un compromis entre latence et cohérence"
+  },
+  {
+    "uuid": "72c300f3-da57-4622-be82-d33471409562",
+    "question": "Que retourne ce pipeline MongoDB sur une collection commandes ?\n\n`db.commandes.aggregate([{$match:{statut:\"payée\"}},{$group:{_id:\"$client\",total:{$sum:\"$montant\"}}},{$sort:{total:-1}},{$limit:3}])`",
+    "options": [
+      "Les 3 commandes payées au montant le plus élevé",
+      "Les 3 clients ayant passé le moins de commandes",
+      "Le montant total des 3 dernières commandes payées",
+      "Les 3 clients ayant le plus dépensé sur leurs commandes payées"
+    ],
+    "answer": "Les 3 clients ayant le plus dépensé sur leurs commandes payées"
+  },
+  {
+    "uuid": "b4ab441e-7510-404e-b119-a1c3366a5fe4",
+    "question": "Quel étage du pipeline d'agrégation MongoDB permet de réaliser l'équivalent d'une jointure externe gauche avec une autre collection ?",
+    "options": [
+      "$unwind",
+      "$facet",
+      "$merge",
+      "$lookup"
+    ],
+    "answer": "$lookup"
+  },
+  {
+    "uuid": "12a18185-1f54-4354-a1b9-e8ab4bd8ef96",
+    "question": "Quel est le risque principal d'une shard key monotone croissante (ObjectId, horodatage) dans MongoDB ?",
+    "options": [
+      "Le replica set perd sa tolérance aux pannes",
+      "Les documents deviennent immuables",
+      "Toutes les nouvelles écritures atterrissent sur le même shard (hot shard)",
+      "Les index composés deviennent impossibles"
+    ],
+    "answer": "Toutes les nouvelles écritures atterrissent sur le même shard (hot shard)"
+  },
+  {
+    "uuid": "61ab72ae-fd72-4ed2-b9a7-8e3a2e4d0db2",
+    "question": "Que renvoie cette requête MongoDB ?\n\n`db.notes.find({$nor:[{note:{$lt:10}},{absent:true}]})`",
+    "options": [
+      "Les documents qui vérifient au moins l'une des deux conditions",
+      "Les documents qui vérifient les deux conditions à la fois",
+      "Les documents pour lesquels aucune des deux conditions n'est vraie",
+      "Uniquement les documents dont la note est supérieure ou égale à 10"
+    ],
+    "answer": "Les documents pour lesquels aucune des deux conditions n'est vraie"
+  },
+  {
+    "uuid": "413eaf55-3206-465d-b7c5-5d13deffbd7f",
+    "question": "Que garantit l'option d'écriture `w: \"majority\"` dans MongoDB ?",
+    "options": [
+      "L'écriture est acquittée une fois confirmée par la majorité des membres du replica set",
+      "L'écriture est écrite sur disque avant d'être visible",
+      "L'écriture est répliquée sur tous les shards du cluster",
+      "L'écriture est exécutée dans une transaction ACID multi-documents"
+    ],
+    "answer": "L'écriture est acquittée une fois confirmée par la majorité des membres du replica set"
+  },
+  {
+    "uuid": "9c1f1634-e7cc-4ffb-95b2-8942283a99b8",
+    "question": "Pourquoi recommande-t-on un nombre impair de membres votants dans un replica set MongoDB ?",
+    "options": [
+      "Pour doubler la capacité de stockage",
+      "Pour que le sharding soit possible",
+      "Pour pouvoir élire un primaire à la majorité et éviter les égalités de votes",
+      "Pour répartir équitablement les lectures"
+    ],
+    "answer": "Pour pouvoir élire un primaire à la majorité et éviter les égalités de votes"
+  },
+  {
+    "uuid": "344abc7c-d57f-44f1-82f6-c8b8ef569616",
+    "question": "Quelle structure Redis est la plus adaptée pour un classement (leaderboard) en temps réel ?",
+    "options": [
+      "Hash",
+      "List",
+      "Set",
+      "Sorted Set"
+    ],
+    "answer": "Sorted Set"
+  },
+  {
+    "uuid": "f6566665-cb98-45f0-ac1d-4cae3a1ee6b8",
+    "question": "Quelle est la différence entre les mécanismes de persistance RDB et AOF de Redis ?",
+    "options": [
+      "RDB est réservé au cache, AOF au stockage de documents",
+      "RDB sert à la réplication, AOF au sharding",
+      "RDB journalise chaque écriture, AOF réalise des instantanés périodiques",
+      "RDB réalise des instantanés périodiques, AOF journalise chaque opération d'écriture"
+    ],
+    "answer": "RDB réalise des instantanés périodiques, AOF journalise chaque opération d'écriture"
+  },
+  {
+    "uuid": "72969fd5-c30b-4307-b33b-3d76df535666",
+    "question": "Que fait la politique d'éviction `allkeys-lru` de Redis lorsque `maxmemory` est atteint ?",
+    "options": [
+      "Elle bascule les données froides sur disque",
+      "Elle refuse toute nouvelle écriture",
+      "Elle supprime les clés les moins récemment utilisées, toutes clés confondues",
+      "Elle supprime uniquement les clés ayant un TTL"
+    ],
+    "answer": "Elle supprime les clés les moins récemment utilisées, toutes clés confondues"
+  },
+  {
+    "uuid": "a1abaf71-2258-48ff-945b-b4d2587dd2e3",
+    "question": "Quelle approche de modélisation est recommandée avec Cassandra ?",
+    "options": [
+      "Modéliser les entités et ajouter des index secondaires partout",
+      "Définir un schéma unique et générique pour toutes les requêtes",
+      "Normaliser le modèle puis utiliser des jointures",
+      "Partir des requêtes à servir et dénormaliser, avec une table par type de requête"
+    ],
+    "answer": "Partir des requêtes à servir et dénormaliser, avec une table par type de requête"
+  },
+  {
+    "uuid": "d37f6c4c-9702-49b8-85b1-f0b970976e1b",
+    "question": "Dans `PRIMARY KEY ((capteur_id), horodatage)` en CQL, quel rôle joue `horodatage` ?",
+    "options": [
+      "Clé de clustering : il ordonne les lignes au sein d'une même partition",
+      "Clé de partition : il répartit les données entre les nœuds",
+      "Clé de sharding globale",
+      "Index secondaire"
+    ],
+    "answer": "Clé de clustering : il ordonne les lignes au sein d'une même partition"
+  },
+  {
+    "uuid": "c3fb5c49-0890-4345-8220-20b97a7dd117",
+    "question": "Que signifie « index-free adjacency » dans une base de données graphe comme Neo4j ?",
+    "options": [
+      "Les nœuds sont indexés par un hachage cohérent",
+      "Chaque nœud référence directement ses voisins : le coût d'une traversée ne dépend pas de la taille totale du graphe",
+      "Les relations sont stockées dans une table d'index séparée",
+      "Le graphe n'a pas besoin de schéma"
+    ],
+    "answer": "Chaque nœud référence directement ses voisins : le coût d'une traversée ne dépend pas de la taille totale du graphe"
+  },
+  {
+    "uuid": "8fbc1884-f752-46f1-84b2-03d68dd2fbad",
+    "question": "Que retourne cette requête Cypher ?\n\n`MATCH (u:User {nom:'Alice'})-[:AMI]->()-[:AMI]->(rec) WHERE NOT (u)-[:AMI]->(rec) AND rec <> u RETURN DISTINCT rec`",
+    "options": [
+      "Tous les amis directs d'Alice",
+      "Le plus court chemin entre Alice et chaque utilisateur",
+      "Les amis d'Alice qui n'ont aucun ami",
+      "Les amis d'amis d'Alice qui ne sont pas déjà ses amis"
+    ],
+    "answer": "Les amis d'amis d'Alice qui ne sont pas déjà ses amis"
+  },
+  {
+    "uuid": "abf8ef47-08ae-4254-9121-37fc7ec706ba",
+    "question": "Un triplestore contient `:Felix rdf:type :Chat` et `:Chat rdfs:subClassOf :Animal`. Une requête SPARQL sur les `:Animal` retourne aussi `:Felix`. Quel mécanisme l'explique ?",
+    "options": [
+      "L'indexation Lucene",
+      "La dénormalisation des triplets",
+      "L'inférence (raisonnement RDFS/OWL)",
+      "Une jointure SQL implicite"
+    ],
+    "answer": "L'inférence (raisonnement RDFS/OWL)"
+  },
+  {
+    "uuid": "9ed26b7c-99a4-4d28-8e7a-b61749cb568d",
+    "question": "Quelle technique permet de réduire le volume d'une base de séries temporelles tout en conservant la tendance des données anciennes ?",
+    "options": [
+      "L'ajout d'index composés",
+      "Le sharding par clé de hachage",
+      "La réplication synchrone",
+      "Le downsampling (agrégation) combiné à une politique de rétention"
+    ],
+    "answer": "Le downsampling (agrégation) combiné à une politique de rétention"
+  },
+  {
+    "uuid": "7e669f87-59ac-4565-920f-4216d695fe21",
+    "question": "Quelle structure permet à Lucene / Elasticsearch de retrouver rapidement les documents contenant un terme donné ?",
+    "options": [
+      "L'index inversé",
+      "L'arbre hiérarchique de documents",
+      "La table de hachage clé-valeur",
+      "Le graphe de propriétés"
+    ],
+    "answer": "L'index inversé"
+  },
+  {
+    "uuid": "92ce026f-3ddb-4898-ad1d-bf4a16278e69",
+    "question": "Une transaction relit deux fois la même requête et obtient de nouvelles lignes insérées entre-temps par une autre transaction validée. De quelle anomalie s'agit-il ?",
+    "options": [
+      "Lecture fantôme",
+      "Lecture non répétable",
+      "Mise à jour perdue",
+      "Lecture sale"
+    ],
+    "answer": "Lecture fantôme"
+  },
+  {
+    "uuid": "70969e62-c4d4-479e-924a-580122eb97a2",
+    "question": "Quel est l'intérêt du hachage cohérent (consistent hashing) dans une base distribuée ?",
+    "options": [
+      "Limiter le nombre de clés à redistribuer lors de l'ajout ou du retrait d'un nœud",
+      "Supprimer le besoin de réplication",
+      "Chiffrer les données entre les nœuds",
+      "Garantir l'ACIDité des transactions"
+    ],
+    "answer": "Limiter le nombre de clés à redistribuer lors de l'ajout ou du retrait d'un nœud"
+  },
+  {
+    "uuid": "3fcf1889-a942-447c-a3d9-982917ecfd68",
+    "question": "Une boutique utilise PostgreSQL pour les commandes, Redis pour les sessions et Elasticsearch pour la recherche produit. Comment nomme-t-on cette approche ?",
+    "options": [
+      "Le sharding fonctionnel",
+      "La scalabilité verticale",
+      "L'architecture hexagonale",
+      "La persistance polyglotte"
+    ],
+    "answer": "La persistance polyglotte"
+  },
+  {
+    "uuid": "855e8b31-6d50-4475-8d34-cc2ad1af5541",
+    "question": "Quelle pratique réduit le plus durablement l'empreinte d'une base de données en production dans une démarche d'éco-conception ?",
+    "options": [
+      "Conserver toutes les données en mémoire vive",
+      "Désactiver tous les index pour économiser du stockage",
+      "Une politique de cycle de vie des données : archivage et suppression des données froides ou inutiles",
+      "Multiplier les réplicas par précaution"
+    ],
+    "answer": "Une politique de cycle de vie des données : archivage et suppression des données froides ou inutiles"
+  },
+  {
+    "uuid": "6bc69245-fe99-4360-b384-300aa89457d7",
+    "question": "Sur IPFS, comment un fichier est-il identifié ?",
+    "options": [
+      "Par son nom et son chemin dans l'arborescence",
+      "Par un hachage de son contenu (CID)",
+      "Par l'URL du serveur qui l'héberge",
+      "Par l'adresse IP du pair qui l'a publié"
+    ],
+    "answer": "Par un hachage de son contenu (CID)"
+  },
+  {
+    "uuid": "7e24186a-ab80-426a-b4a9-15f32d33ab22",
+    "question": "Pour quel programme spatial les premières bases hiérarchiques ont-elles été utilisées ?",
+    "options": [
+      "Le programme Concorde",
+      "Le réseau ARPANET",
+      "Le Minitel",
+      "Les missions Apollo"
+    ],
+    "answer": "Les missions Apollo"
+  },
+  {
+    "uuid": "c20361e2-d189-4aa8-a359-b345a866c153",
+    "question": "Qu'est-ce qu'un « split-brain » dans un cluster ?",
+    "options": [
+      "La séparation volontaire des lectures et des écritures",
+      "La duplication d'une base sur deux datacenters",
+      "Deux sous-groupes de nœuds se considèrent chacun comme maître après une partition, avec un risque d'écritures divergentes",
+      "Le partitionnement d'une table en deux moitiés égales"
+    ],
+    "answer": "Deux sous-groupes de nœuds se considèrent chacun comme maître après une partition, avec un risque d'écritures divergentes"
+  },
+  {
+    "uuid": "7a659a76-a543-4ae1-a5a8-78ea15cf3d1e",
+    "question": "Comment Google Spanner offre-t-il une cohérence forte à l'échelle mondiale ?",
+    "options": [
+      "En stockant toutes les données dans un seul datacenter",
+      "En utilisant une cohérence éventuelle avec résolution de conflits",
+      "En renonçant à la tolérance au partitionnement",
+      "Grâce à TrueTime : des horloges synchronisées avec une incertitude bornée qui ordonnent les transactions"
+    ],
+    "answer": "Grâce à TrueTime : des horloges synchronisées avec une incertitude bornée qui ordonnent les transactions"
+  }
+]
