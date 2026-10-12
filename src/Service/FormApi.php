@@ -107,7 +107,7 @@ class FormApi
     /**
      * @return array
      */
-    public function randomize($length = 80): array
+    public function randomize($length = 60): array
     {
         $items = $this->form->items;
         shuffle($items);
