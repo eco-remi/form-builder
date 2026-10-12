@@ -82,7 +82,9 @@ class IndexController extends AbstractController
         $form = $this->formApi->getForm();
 
         $message = '<h2 style="text-align: center;padding-top: 20%;">Merci de votre participation ! 👍</h2>';
-        $message .= sprintf('<br/><a href="%s">Rendez vous sur Miro.com pour patienter...</a>', $this->miroLink);
+        if ($this->miroLink) {
+            $message .= sprintf('<br/><a href="%s">Rendez vous sur Miro.com pour patienter...</a>', $this->miroLink);
+        }
 
         return $this->render(
             'index.html.twig',
